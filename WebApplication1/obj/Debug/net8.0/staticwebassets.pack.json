@@ -1,19 +1,19 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\solt2\\Desktop\\ASP\\WebApplication1\\wwwroot\\1.html",
+      "Id": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\WebApplication1\\wwwroot\\1.html",
       "PackagePath": "staticwebassets\\1.html"
     },
     {
-      "Id": "C:\\Users\\solt2\\Desktop\\ASP\\WebApplication1\\wwwroot\\API.JS",
+      "Id": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\WebApplication1\\wwwroot\\API.JS",
       "PackagePath": "staticwebassets\\API.JS"
     },
     {
-      "Id": "C:\\Users\\solt2\\Desktop\\ASP\\WebApplication1\\wwwroot\\DOM.JS",
+      "Id": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\WebApplication1\\wwwroot\\DOM.JS",
       "PackagePath": "staticwebassets\\DOM.JS"
     },
     {
-      "Id": "C:\\Users\\solt2\\Desktop\\ASP\\WebApplication1\\wwwroot\\jquery-3.7.0.js",
+      "Id": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\WebApplication1\\wwwroot\\jquery-3.7.0.js",
       "PackagePath": "staticwebassets\\jquery-3.7.0.js"
     },
     {

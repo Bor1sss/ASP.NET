@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XJQYle0nKtHN7xmrdgKVfB3aQDNWbW3iDAtTheX/JaI=",
+  "Hash": "Dns7jbX8AaeW9XKAkPzpUmEdw54unXLrOXK9838APAU=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "WebApplication1\\wwwroot",
       "Source": "WebApplication1",
-      "ContentRoot": "C:\\Users\\solt2\\Desktop\\ASP\\WebApplication1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\WebApplication1\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\solt2\\Desktop\\ASP\\WebApplication1\\wwwroot\\1.html",
+      "Identity": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\WebApplication1\\wwwroot\\1.html",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\solt2\\Desktop\\ASP\\WebApplication1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\WebApplication1\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
       "RelativePath": "1.html",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\1.html"
     },
     {
-      "Identity": "C:\\Users\\solt2\\Desktop\\ASP\\WebApplication1\\wwwroot\\API.JS",
+      "Identity": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\WebApplication1\\wwwroot\\API.JS",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\solt2\\Desktop\\ASP\\WebApplication1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\WebApplication1\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
       "RelativePath": "API.JS",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\API.JS"
     },
     {
-      "Identity": "C:\\Users\\solt2\\Desktop\\ASP\\WebApplication1\\wwwroot\\DOM.JS",
+      "Identity": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\WebApplication1\\wwwroot\\DOM.JS",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\solt2\\Desktop\\ASP\\WebApplication1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\WebApplication1\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
       "RelativePath": "DOM.JS",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\DOM.JS"
     },
     {
-      "Identity": "C:\\Users\\solt2\\Desktop\\ASP\\WebApplication1\\wwwroot\\jquery-3.7.0.js",
+      "Identity": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\WebApplication1\\wwwroot\\jquery-3.7.0.js",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\solt2\\Desktop\\ASP\\WebApplication1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\WebApplication1\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
       "RelativePath": "jquery-3.7.0.js",
       "AssetKind": "All",

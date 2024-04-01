@@ -13,10 +13,9 @@ function Display(data) {
 
     const weatherContainer = $("#Fdata");
     const iconUrl = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
-    
     const weatherItem = $(`
         <div class="icon-block">
-            <p class="sec-text">Sunny</p>
+            <p class="sec-text">${data.weather[0].main}</p>
             <img src="${iconUrl}" alt="weather" />
         </div>
         <div class="temp-block">
