@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="jquery-3.7.0.js"></script>
+</head>
+<style>
+:root {
+    --margin-b: 24px;
+    --primary-color: #4dabb2;
+    --primary-text-color: gray;
+    --secondary-text-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    padding: 24px 0;
+    background-color: #f3f2f2;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--margin-b);
+}
+
+section {
+    background-color: #fcfcfc;
+    padding: 16px;
+    margin-bottom: var(--margin-b);
+    display: grid;
+    grid-template-columns: fit-content();
+    gap: 16px;
+}
+
+footer {
+    display: none;
+}
+
+#error_sect {
+    display: none;
+}
+
+p {
+    color: var(--primary-text-color);
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+#search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+    #search input {
+        border: 0px;
+        padding: 2px;
+        background-color: transparent;
+        color: lightslategray;
+        font-size: 16px;
+        border-bottom: 2px solid var(--primary-color);
+        transition: border-bottom-color 0.3s;
+        outline: none;
+    }
+
+        #search input:hover,
+        #search input:focus,
+        #search input:active {
+            border-bottom-color: coral;
+        }
+
+
+
+header #search_btn {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+
+.sect-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    .sect-title p {
+        font-weight: 600;
+        color: var(--primary-color);
+    }
+
+.primary-text {
+    font-weight: 600;
+}
+
+.sec-text {
+    font-weight: 600;
+    color: var(--secondary-text-color);
+}
+
+#cur_day_sect .info {
+    padding: 0 4px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+#cur_day_sect .icon-block {
+    display: flex;
+    flex-direction: column;
+}
+
+    #cur_day_sect .icon-block img {
+        padding: 0 16px;
+        height: 120px;
+        background-size: cover;
+    }
+
+#cur_day_sect .temp-block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    #cur_day_sect .temp-block p {
+        font-size: 48px;
+        font-weight: 500;
+        color: var(--secondary-text-color);
+    }
+
+
+#cur_day_sect .add-info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: normal;
+}
+
+
+
+#horly_sect .info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+}
+
+#horly_sect .data {
+    display: grid;
+    grid-template-rows: auto 80px auto auto auto;
+    gap: 8px;
+}
+
+#horly_sect .items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#horly_sect .weather-item {
+    display: grid;
+    grid-template-rows: auto 80px auto auto auto;
+    gap: 8px;
+}
+
+    #horly_sect .weather-item img {
+        height: 100%;
+        background-size: cover;
+    }
+
+
+
+
+#error_sect {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+    #error_sect #error-code {
+        font-size: 40px;
+        font-weight: 600;
+        color: orange;
+    }
+
+    #error_sect #error-text {
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    #error_sect #error-help {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+
+    </style>
+
+</style>
+<body>
+    <header>
+        <h1>current weather</h1>
+        <form action="">
+        <div id="search">
+            <input id="City" type="text" placeholder="Search" />
+            <button id="search_btn" type="button"></button>
+        </form>
+        </div>
+    </header>
+    <main>
+        <section id="cur_day_sect">
+            <div class="sect-title">
+                <p>Kiev</p>
+                <p>05.03.2020</p>
+            </div>
+            <div class="info" id="Fdata">
+                <div class="icon-block">
+                    <p class="sec-text">Sunny</p>
+                    <img src="https://cdn-icons-png.flaticon.com/128/4814/4814268.png" alt="weather" />
+                </div>
+                <div class="temp-block">
+                    <p><span id="temp-value">18</span> °C</p>
+                </div>
+                <div class="add-info">
+                    <p>Min temperature</p>
+                    <p> <span id="min-temp">16</span> °C</p>
+
+                    <p>Max temperature</p>
+                    <p> <span id="max-temp">16</span> °C</p>
+
+                    <p>Wind speed (km/h)</p>
+                    <p id="wind-speed"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="horly_sect">
+            <div class="sect-title">
+                <p class="primary-text">Hourly</p>
+                <p class="primary-text"></p>
+            </div>
+            <div class="info" id="Sdata">
+                <div class="data">
+                    <p id="weekday" class="sec-text">Sunday</p>
+                    <div><!--image--></div>
+                    <p>Forecast</p>
+                    <p>Temp(°C)</p>
+                    <p>Wind (km/h)</p>
+                </div>
+                <div class="items" id="data">
+                    <div class="weather-item">
+                        <p class="sec-text">7:00</p>
+                        <img src="https://cdn-icons-png.flaticon.com/128/4814/4814268.png" alt="weather" />
+                        <p>Sunnt</p>
+                        <p>18</p>
+                        <p>2</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <section id="error_sect">
+        <p id="error-code">404</p>
+        <p id="error-text">not found</p>
+        <p id="error-help">Please enter a different city</p>
+    </section>
+    <footer>
+    </footer>
+  
+
+<script type="module">
+    import DOM from "./DOM.js";
+    const API = await import("./API.js");
+    let data;
+    $("form").on("submit",async function(e){
+        e.preventDefault();
+
+        data= await API.SendRequest($("#City").val());
+        DOM.Display(data);
+
+        data= await API.SendForecast($("#City").val());
+
+        DOM.DisplayHourly(data);
+
+       
+        
+
+    })
+
+
+    
+</script>
+
+
+
+
+
+
+
+    
+</body>
+</html>
