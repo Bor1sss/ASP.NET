@@ -5,7 +5,7 @@ app.UseStaticFiles();
 app.Run(async (context) =>
 {
     context.Response.ContentType = "text/html; charset=utf-8";
-    await context.Response.SendFileAsync("wwwroot/1X.html");
+    await context.Response.SendFileAsync("wwwroot/1.html");
 });
 
 

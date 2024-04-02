@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\WebApplication1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B86CE491-B5DB-44FF-8D83-D03F4D2CA66C}|WebApplication1.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\webapplication1\\wwwroot\\dom.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B86CE491-B5DB-44FF-8D83-D03F4D2CA66C}|WebApplication1.csproj|solutionrelative:wwwroot\\dom.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B86CE491-B5DB-44FF-8D83-D03F4D2CA66C}|WebApplication1.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\webapplication1\\wwwroot\\api.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B86CE491-B5DB-44FF-8D83-D03F4D2CA66C}|WebApplication1.csproj|solutionrelative:wwwroot\\api.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B86CE491-B5DB-44FF-8D83-D03F4D2CA66C}|WebApplication1.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B86CE491-B5DB-44FF-8D83-D03F4D2CA66C}|WebApplication1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B86CE491-B5DB-44FF-8D83-D03F4D2CA66C}|WebApplication1.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\webapplication1\\wwwroot\\1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B86CE491-B5DB-44FF-8D83-D03F4D2CA66C}|WebApplication1.csproj|solutionrelative:wwwroot\\1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,19 +31,54 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DOM.JS",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\WebApplication1\\wwwroot\\DOM.JS",
+              "RelativeDocumentMoniker": "wwwroot\\DOM.JS",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\WebApplication1\\wwwroot\\DOM.JS",
+              "RelativeToolTip": "wwwroot\\DOM.JS",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-02T11:53:40.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "API.JS",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\WebApplication1\\wwwroot\\API.JS",
+              "RelativeDocumentMoniker": "wwwroot\\API.JS",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\WebApplication1\\wwwroot\\API.JS",
+              "RelativeToolTip": "wwwroot\\API.JS",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-02T11:48:35.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "1.html",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\WebApplication1\\wwwroot\\1.html",
+              "RelativeDocumentMoniker": "wwwroot\\1.html",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\WebApplication1\\wwwroot\\1.html",
+              "RelativeToolTip": "wwwroot\\1.html",
+              "ViewState": "AQIAACgAAAAAAAAAAAAAABcBAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-02T09:05:27.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\WebApplication1\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\WebApplication1\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA0AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T07:12:47.654Z",
+              "WhenOpened": "2024-04-02T09:04:40.133Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
