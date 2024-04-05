@@ -73,3 +73,29 @@ C:\Users\solt2\Downloads\2. Request processing pipeline\2. Request processing pi
 C:\Users\solt2\Downloads\2. Request processing pipeline\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\obj\Debug\net8.0\RequestProcessingPipeline.pdb
 C:\Users\solt2\Downloads\2. Request processing pipeline\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\obj\Debug\net8.0\RequestProcessingPipeline.genruntimeconfig.cache
 C:\Users\solt2\Downloads\2. Request processing pipeline\2. Request processing pipeline\RequestProcessingPipeline\RequestProcessingPipeline\obj\Debug\net8.0\ref\RequestProcessingPipeline.dll
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\obj\Debug\net8.0\RequestProcessingPipeline.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\obj\Debug\net8.0\RequestProcessingPipeline.AssemblyInfoInputs.cache
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\obj\Debug\net8.0\RequestProcessingPipeline.AssemblyInfo.cs
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\obj\Debug\net8.0\RequestProcessingPipeline.csproj.CoreCompileInputs.cache
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\obj\Debug\net8.0\RequestProcessingPipeline.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\obj\Debug\net8.0\RequestProcessingPipeline.sourcelink.json
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\obj\Debug\net8.0\RequestProcessingPipeline.dll
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\obj\Debug\net8.0\refint\RequestProcessingPipeline.dll
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\obj\Debug\net8.0\RequestProcessingPipeline.pdb
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\bin\Debug\net8.0\appsettings.json
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\bin\Debug\net8.0\RequestProcessingPipeline.exe
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\bin\Debug\net8.0\RequestProcessingPipeline.deps.json
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\bin\Debug\net8.0\RequestProcessingPipeline.runtimeconfig.json
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\bin\Debug\net8.0\RequestProcessingPipeline.dll
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\bin\Debug\net8.0\RequestProcessingPipeline.pdb
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\obj\Debug\net8.0\staticwebassets\msbuild.RequestProcessingPipeline.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\obj\Debug\net8.0\staticwebassets\msbuild.build.RequestProcessingPipeline.props
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.RequestProcessingPipeline.props
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.RequestProcessingPipeline.props
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\obj\Debug\net8.0\scopedcss\bundle\RequestProcessingPipeline.styles.css
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\obj\Debug\net8.0\RequestProcessingPipeline.genruntimeconfig.cache
+C:\Users\solt2\Desktop\ASP\ASP.NET\RequestProcessingPipeline\obj\Debug\net8.0\ref\RequestProcessingPipeline.dll

@@ -1,0 +1,254 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\requestprocessingpipeline\\10kk_100kmiddle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|solutionrelative:10kk_100kmiddle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\requestprocessingpipeline\\fromtwentytohundredmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|solutionrelative:fromtwentytohundredmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\requestprocessingpipeline\\10kk_100kext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|solutionrelative:10kk_100kext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\requestprocessingpipeline\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\requestprocessingpipeline\\10k_10kkmiddle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|solutionrelative:10k_10kkmiddle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\requestprocessingpipeline\\fromeleventonineteenmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|solutionrelative:fromeleventonineteenmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\requestprocessingpipeline\\1000_10kmiddle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|solutionrelative:1000_10kmiddle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\requestprocessingpipeline\\100_1000middle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|solutionrelative:100_1000middle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\requestprocessingpipeline\\fromeleventonineteenextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|solutionrelative:fromeleventonineteenextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\requestprocessingpipeline\\100_1000ext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|solutionrelative:100_1000ext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\requestprocessingpipeline\\fromonetotenmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|solutionrelative:fromonetotenmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\requestprocessingpipeline\\fromonetotenextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|solutionrelative:fromonetotenextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\requestprocessingpipeline\\fromtwentytohundredextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C758C5-0EEC-40D8-9E4F-1C24C9A3FAAA}|RequestProcessingPipeline.csproj|solutionrelative:fromtwentytohundredextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\RequestProcessingPipeline.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RequestProcessingPipeline.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "10kk_100kMiddle.cs",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\10kk_100kMiddle.cs",
+              "RelativeDocumentMoniker": "10kk_100kMiddle.cs",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\10kk_100kMiddle.cs",
+              "RelativeToolTip": "10kk_100kMiddle.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAADgvw8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T10:38:52.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FromTwentyToHundredMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\FromTwentyToHundredMiddleware.cs",
+              "RelativeDocumentMoniker": "FromTwentyToHundredMiddleware.cs",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\FromTwentyToHundredMiddleware.cs",
+              "RelativeToolTip": "FromTwentyToHundredMiddleware.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAADgvx4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T12:28:14.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "10kk_100kEXT.cs",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\10kk_100kEXT.cs",
+              "RelativeDocumentMoniker": "10kk_100kEXT.cs",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\10kk_100kEXT.cs",
+              "RelativeToolTip": "10kk_100kEXT.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T10:38:09.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "10k_10kkMiddle.cs",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\10k_10kkMiddle.cs",
+              "RelativeDocumentMoniker": "10k_10kkMiddle.cs",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\10k_10kkMiddle.cs",
+              "RelativeToolTip": "10k_10kkMiddle.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAADgvzMAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T20:04:42.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T12:24:55.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "100_1000Middle.cs",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\100_1000Middle.cs",
+              "RelativeDocumentMoniker": "100_1000Middle.cs",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\100_1000Middle.cs",
+              "RelativeToolTip": "100_1000Middle.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAADgvyoAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T09:44:36.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FromElevenToNineteenMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\FromElevenToNineteenMiddleware.cs",
+              "RelativeDocumentMoniker": "FromElevenToNineteenMiddleware.cs",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\FromElevenToNineteenMiddleware.cs",
+              "RelativeToolTip": "FromElevenToNineteenMiddleware.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAgwCAAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T12:26:10.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "1000_10kMiddle.cs",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\1000_10kMiddle.cs",
+              "RelativeDocumentMoniker": "1000_10kMiddle.cs",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\1000_10kMiddle.cs",
+              "RelativeToolTip": "1000_10kMiddle.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T10:13:20.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FromElevenToNineteenExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\FromElevenToNineteenExtensions.cs",
+              "RelativeDocumentMoniker": "FromElevenToNineteenExtensions.cs",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\FromElevenToNineteenExtensions.cs",
+              "RelativeToolTip": "FromElevenToNineteenExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T12:26:08.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "100_1000EXT.cs",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\100_1000EXT.cs",
+              "RelativeDocumentMoniker": "100_1000EXT.cs",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\100_1000EXT.cs",
+              "RelativeToolTip": "100_1000EXT.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T20:14:18.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FromOneToTenMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\FromOneToTenMiddleware.cs",
+              "RelativeDocumentMoniker": "FromOneToTenMiddleware.cs",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\FromOneToTenMiddleware.cs",
+              "RelativeToolTip": "FromOneToTenMiddleware.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAcwBoAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T12:26:17.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FromOneToTenExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\FromOneToTenExtensions.cs",
+              "RelativeDocumentMoniker": "FromOneToTenExtensions.cs",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\FromOneToTenExtensions.cs",
+              "RelativeToolTip": "FromOneToTenExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T12:26:16.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FromTwentyToHundredExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\FromTwentyToHundredExtensions.cs",
+              "RelativeDocumentMoniker": "FromTwentyToHundredExtensions.cs",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\FromTwentyToHundredExtensions.cs",
+              "RelativeToolTip": "FromTwentyToHundredExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T12:51:39.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RequestProcessingPipeline.csproj.user",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\RequestProcessingPipeline.csproj.user",
+              "RelativeDocumentMoniker": "RequestProcessingPipeline.csproj.user",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\RequestProcessingPipeline\\RequestProcessingPipeline.csproj.user",
+              "RelativeToolTip": "RequestProcessingPipeline.csproj.user",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2024-04-03T12:24:51.937Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
