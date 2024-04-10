@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\solt2\\Desktop\\ASP\\MVC first\\MVC first.csproj": {}
+    "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MVC first\\MVC first.csproj": {}
   },
   "projects": {
-    "C:\\Users\\solt2\\Desktop\\ASP\\MVC first\\MVC first.csproj": {
+    "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MVC first\\MVC first.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\solt2\\Desktop\\ASP\\MVC first\\MVC first.csproj",
+        "projectUniqueName": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MVC first\\MVC first.csproj",
         "projectName": "MVC first",
-        "projectPath": "C:\\Users\\solt2\\Desktop\\ASP\\MVC first\\MVC first.csproj",
+        "projectPath": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MVC first\\MVC first.csproj",
         "packagesPath": "C:\\Users\\solt2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\solt2\\Desktop\\ASP\\MVC first\\obj\\",
+        "outputPath": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MVC first\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\solt2\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,6 +45,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.3, )"

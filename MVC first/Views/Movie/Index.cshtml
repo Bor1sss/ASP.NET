@@ -1,11 +1,12 @@
-﻿@*
-   
-*@
-@model IEnumerable<Movie>
+﻿@model IEnumerable<Movie>
 @{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
-
+    
     <div class="main">
+        <a asp-action="Create">Create New</a>
         @foreach (var film in Model)
         {
             <div class="filmplate">
@@ -13,13 +14,19 @@
                 <div class="finfo">
                     <span>@film.Title</span>
                     <span>@film.Director</span>
-                    <span>@film.Genres</span>
+                    <span> @film.Genre</span>
                     <span>@film.Date.ToShortDateString()</span>
                     <span id="min">@film.Description</span>
+                  
+                    <div class="button-container">
+                    <a asp-action="Edit" asp-route-id="@film.Id">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@film.Id">Delete</a>
+                    <a asp-action="View" asp-route-id="@film.Id">View</a>
+                    </div>
                 </div>
             </div>
         }
     </div>
 
 
-}
+
