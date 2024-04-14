@@ -53,7 +53,7 @@ namespace MVC_first.Controllers
             {
                 return NotFound();
             }
-            if (!uploadedFile.FileName.Contains(".jpg")|| !uploadedFile.FileName.Contains(".png"))
+            if (!uploadedFile.FileName.Contains(".jpg")&& !uploadedFile.FileName.Contains(".png"))
             {
                 ModelState.AddModelError("", "файл должен быть .jpg или png");
             }
@@ -107,7 +107,7 @@ namespace MVC_first.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(IFormFile uploadedFile,[Bind("Id,Title,Director,Date,PosterPath,Description")] Movie movie)
         {
-            if (!uploadedFile.FileName.Contains(".jpg") || !uploadedFile.FileName.Contains(".png"))
+            if (!uploadedFile.FileName.Contains(".jpg") && !uploadedFile.FileName.Contains(".png"))
             {
                 ModelState.AddModelError("", "файл должен быть .jpg или png");
             }
