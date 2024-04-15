@@ -15,9 +15,9 @@ namespace Guest.Controllers
 {
     public class RegisterController : Controller
     {
-        IRepository repo;
+        IRepositoryUser repo;
 
-        public RegisterController(IRepository r)
+        public RegisterController(IRepositoryUser r)
         {
             repo = r;
         }

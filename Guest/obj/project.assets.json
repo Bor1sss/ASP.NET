@@ -7843,11 +7843,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\solt2\\Desktop\\ASP\\Guest\\Guest.csproj",
+      "projectUniqueName": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Guest\\Guest.csproj",
       "projectName": "Guest",
-      "projectPath": "C:\\Users\\solt2\\Desktop\\ASP\\Guest\\Guest.csproj",
+      "projectPath": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Guest\\Guest.csproj",
       "packagesPath": "C:\\Users\\solt2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\solt2\\Desktop\\ASP\\Guest\\obj\\",
+      "outputPath": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Guest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\solt2\\AppData\\Roaming\\NuGet\\NuGet.Config",

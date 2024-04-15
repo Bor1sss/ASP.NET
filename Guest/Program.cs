@@ -23,7 +23,8 @@ builder.Services.AddDbContext<UserContext>(options => options.UseSqlServer(conne
 // Добавляем сервисы MVC
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddScoped<IRepository, MessageRepository>();
+builder.Services.AddScoped<IRepositoryMessage, MessageRepository>();
+builder.Services.AddScoped<IRepositoryUser, UserRepository>();
 
 var app = builder.Build();
 app.UseStaticFiles(); // обрабатывает запросы к файлам в папке wwwroot

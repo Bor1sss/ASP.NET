@@ -16,9 +16,9 @@ namespace Guest.Controllers
 {
     public class LoginController : Controller
     {
-        IRepository repo;
+        IRepositoryUser repo;
 
-        public LoginController(IRepository r)
+        public LoginController(IRepositoryUser r)
         {
             repo = r;
         }
@@ -59,21 +59,21 @@ namespace Guest.Controllers
                 if (b.Count == 0)
                 {
                     ModelState.AddModelError("", "Wrong login or password!");
-                    return View(logon);
+                    return RedirectToAction("Index");
                 }
                 var users = b.Where(a => a.Name == logon.Login);
                 if (users.ToList().Count == 0)
                 {
                     ModelState.AddModelError("", "Wrong login or password!");
-                    return View(logon);
+                    return RedirectToAction("Index");
                 }
                 var user = users.First();
                 string? salt = user.Salt;
 
-                //переводим пароль в байт-массив  
+
                 byte[] password = Encoding.Unicode.GetBytes(salt + logon.Password);
 
-                //вычисляем хеш-представление в байтах  
+               
                 byte[] byteHash = SHA256.HashData(password);
 
                 StringBuilder hash = new StringBuilder(byteHash.Length);
@@ -83,7 +83,7 @@ namespace Guest.Controllers
                 if (user.Password != hash.ToString())
                 {
                     ModelState.AddModelError("", "Wrong login or password!");
-                    return View(logon);
+                    return RedirectToAction("Index");
                 }
 
                 HttpContext.Session.SetString("Login", user.Name);

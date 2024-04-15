@@ -17,59 +17,59 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Guest
 build_property.RootNamespace = Guest
-build_property.ProjectDir = C:\Users\solt2\Desktop\ASP\Guest\
+build_property.ProjectDir = C:\Users\solt2\Desktop\ASP\ASP.NET\Guest\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\solt2\Desktop\ASP\Guest
+build_property.MSBuildProjectDirectory = C:\Users\solt2\Desktop\ASP\ASP.NET\Guest
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/solt2/Desktop/ASP/Guest/Views/Login/Index.cshtml]
+[C:/Users/solt2/Desktop/ASP/ASP.NET/Guest/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/solt2/Desktop/ASP/Guest/Views/Messages/Delete.cshtml]
+[C:/Users/solt2/Desktop/ASP/ASP.NET/Guest/Views/Messages/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/solt2/Desktop/ASP/Guest/Views/Messages/Details.cshtml]
+[C:/Users/solt2/Desktop/ASP/ASP.NET/Guest/Views/Messages/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/solt2/Desktop/ASP/Guest/Views/Messages/Edit.cshtml]
+[C:/Users/solt2/Desktop/ASP/ASP.NET/Guest/Views/Messages/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/solt2/Desktop/ASP/Guest/Views/Messages/Index.cshtml]
+[C:/Users/solt2/Desktop/ASP/ASP.NET/Guest/Views/Messages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/solt2/Desktop/ASP/Guest/Views/Register/Edit.cshtml]
+[C:/Users/solt2/Desktop/ASP/ASP.NET/Guest/Views/Register/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/solt2/Desktop/ASP/Guest/Views/Register/Index.cshtml]
+[C:/Users/solt2/Desktop/ASP/ASP.NET/Guest/Views/Register/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/solt2/Desktop/ASP/Guest/Views/Shared/Error.cshtml]
+[C:/Users/solt2/Desktop/ASP/ASP.NET/Guest/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/solt2/Desktop/ASP/Guest/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/solt2/Desktop/ASP/ASP.NET/Guest/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/solt2/Desktop/ASP/Guest/Views/_ViewImports.cshtml]
+[C:/Users/solt2/Desktop/ASP/ASP.NET/Guest/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/solt2/Desktop/ASP/Guest/Views/_ViewStart.cshtml]
+[C:/Users/solt2/Desktop/ASP/ASP.NET/Guest/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/solt2/Desktop/ASP/Guest/Views/Shared/_Layout.cshtml]
+[C:/Users/solt2/Desktop/ASP/ASP.NET/Guest/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-r7eq4thkh5

@@ -15,11 +15,14 @@ namespace Guest.Controllers
     public class MessagesController : Controller
     {
 
-        IRepository repo;
+        IRepositoryMessage repo;
+      
+        IRepositoryUser repoU;
 
-        public MessagesController(IRepository r)
+        public MessagesController(IRepositoryMessage r, IRepositoryUser repoU)
         {
             repo = r;
+            this.repoU = repoU;
         }
 
         // GET: Messages
@@ -47,11 +50,13 @@ namespace Guest.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(string message)
         {
+            
             Messages mes = new Messages();
             mes.Message= message;   
             mes.MessageDate= DateTime.Now;
             var login = HttpContext.Session.GetString("Login");
-            mes.User= await repo.GetUserByLoginAsync(login);
+          
+            mes.User= await repoU.GetUserByLoginAsync(login);
 
             if (ModelState.IsValid)
             {

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Guest.Repository
 {
-    public class MessageRepository : IRepository
+    public class MessageRepository : IRepositoryMessage
     {
         private readonly UserContext _context;
         public MessageRepository(UserContext context)
@@ -12,20 +12,13 @@ namespace Guest.Repository
         }
 
 
-        public async Task<Users> GetUserByLoginAsync(string login)
-        {
-            return await _context.Users.FirstOrDefaultAsync(u => u.Name == login);
-        }
+
         public async Task Create(Messages item)
         {
             await _context.Messages.AddAsync(item);
             _context.SaveChanges();
         }
-        public async Task Create(Users item)
-        {
-            await _context.Users.AddAsync(item);
-            _context.SaveChanges();
-        }
+     
         public async Task Delete(int id)
         {
             Messages? st = await _context.Messages.FindAsync(id);
@@ -58,9 +51,33 @@ namespace Guest.Repository
             _context.Update(item);
         }
 
+    
+    }
+
+    public class UserRepository : IRepositoryUser
+    {
+
+        private readonly UserContext _context;
+        public UserRepository(UserContext context)
+        {
+            _context = context;
+        }
+
+        public async Task<Users> GetUserByLoginAsync(string login)
+        {
+            return await _context.Users.FirstOrDefaultAsync(u => u.Name == login);
+        }
+        public async Task Create(Users item)
+        {
+            await _context.Users.AddAsync(item);
+            _context.SaveChanges();
+        }
         public Task<List<Users>> GetAllUsers()
         {
             return _context.Users.ToListAsync();
         }
     }
-}
+
+
+
+    }

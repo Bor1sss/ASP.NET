@@ -3,18 +3,27 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Guest.Repository
 {
-    public interface IRepository
+    public interface IRepositoryMessage
     {
 
         Task<List<Messages>> GetMessageList();
-        Task<List<Users>> GetAllUsers();
+     
         Task<Messages> GetMessage(int id);
         Task Create(Messages item);
-        Task Create(Users item);
+     
         void Update(Messages item);
         Task Delete(int id);
         Task Save();
-        Task<Users> GetUserByLoginAsync(string login);
+    
 
     }
+    public interface IRepositoryUser
+    {
+        Task<List<Users>> GetAllUsers();
+        Task Create(Users item);
+        Task<Users> GetUserByLoginAsync(string login);
+    }
+
+
+
 }
