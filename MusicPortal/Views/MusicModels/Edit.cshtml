@@ -1,0 +1,66 @@
+﻿@model MusicPortal.Models.MusicModel.Music
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>MusicModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Title" class="control-label">Title:</label>
+                <input asp-for="Title" class="form-control" placeholder="Enter song title" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Genre" class="control-label">Genre:</label>
+                <span>Current.Genre:  @Model.Genre.Title</span>
+                <select asp-for="Genre" class="form-control">
+                    <option value="">Select Genre</option>
+                    @if (ViewBag.Genres != null)
+                    {
+                        foreach (var genre in ViewBag.Genres)
+                        {
+                            <option value="@genre.Id">@genre.Title</option>
+                        }
+                    }
+                </select>
+                <span asp-validation-for="Genre" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <span>Current.MusicPath:  @Model.MusicPath</span>
+                <label asp-for="MusicPath" class="control-label">Music File:</label>
+                <input type="file" name="Music" class="form-control-file" />
+                <span asp-validation-for="MusicPath" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <span>Current.PosterPath:  @Model.PosterPath</span>
+                <label asp-for="PosterPath" class="control-label">Poster Image:</label>
+                <input type="file" name="Poster" class="form-control-file" />
+                <span asp-validation-for="PosterPath" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Add Song</button>
+                <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

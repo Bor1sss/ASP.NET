@@ -50,14 +50,17 @@ namespace Guest.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(string message)
         {
-            
+            if (message == null)
+            {
+                ModelState.AddModelError("", "Сообщение должно быть не null");
+            }
             Messages mes = new Messages();
             mes.Message= message;   
             mes.MessageDate= DateTime.Now;
             var login = HttpContext.Session.GetString("Login");
           
             mes.User= await repoU.GetUserByLoginAsync(login);
-
+            
             if (ModelState.IsValid)
             {
            
@@ -67,57 +70,6 @@ namespace Guest.Controllers
             }
             return RedirectToAction(nameof(Index));
         }
-
-        // GET: Messages/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null || await repo.GetMessageList() == null)
-            {
-                return NotFound();
-            }
-            var message = await repo.GetMessage((int)id);
-            if (message == null)
-            {
-                return NotFound();
-            }
-            return View(message);
-        }
-
-        // POST: Messages/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Message,MessageDate")] Messages messages)
-        {
-            if (id != messages.Id)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    repo.Update(messages);
-                    await repo.Save();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!await MessagesExists(messages.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(messages);
-        }
-
 
         // POST: Messages/Delete/5
         [HttpPost, ActionName("Delete")]

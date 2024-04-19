@@ -39,6 +39,7 @@ namespace Guest.Repository
             var a = await _context.Messages.ToListAsync();
             var b = await _context.Users.ToListAsync();
             return a;
+
         }
 
         public async Task Save()

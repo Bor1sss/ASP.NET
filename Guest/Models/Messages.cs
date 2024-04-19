@@ -7,7 +7,7 @@ namespace Guest.Models
 
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Поле не должно быть пустым!")]
         public string Message { get; set; }
         public DateTime MessageDate { get; set; }
 
