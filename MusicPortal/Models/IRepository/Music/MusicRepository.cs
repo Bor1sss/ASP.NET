@@ -34,6 +34,11 @@ namespace MusicPortal.Models.IRepository.Music
             var b = await _context.Genres.ToListAsync();
             return a;
         }
+        public async Task<IQueryable<MusicModel.Music>> Incl()
+        {
+            return  _context.Musics.Include(x => x.Genre);
+        }
+
 
         public async Task<MusicModel.Music> GetMusic(int id)
         {

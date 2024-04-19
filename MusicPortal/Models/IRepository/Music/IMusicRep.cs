@@ -14,7 +14,7 @@ namespace MusicPortal.Models.IRepository.Music
         void Update(MusicModel.Music item);
 
 
-
+        Task<IQueryable<MusicModel.Music>> Incl();
         Task Delete(int id);
         Task Save();
 

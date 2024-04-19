@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.CodeAnalysis.Elfie.Diagnostics;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Models;
 using MusicPortal.Models.IRepository.Genre;
 using MusicPortal.Models.IRepository.Music;
 using MusicPortal.Models.MusicModel;
+using MusicPortal.Models.ViewModels;
 using Repository;
 
 namespace MusicPortal.Controllers
@@ -38,7 +42,7 @@ namespace MusicPortal.Controllers
             return File(System.IO.File.OpenRead(filePath), "audio/mp4", Path.GetFileName(filePath));
         }
         // GET: MusicModels
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string title, int id = 0, int page = 1)
         {
 
             var login = HttpContext.Session.GetString("Login");
@@ -48,14 +52,47 @@ namespace MusicPortal.Controllers
                 ViewBag.Name=login;
                 var genres = genro.GetGenresList().Result; // Предполагается, что у тебя есть DbContext _dbContext и модель Genre
 
-                // Помещение списка жанров в ViewBag
+               
                 ViewBag.Genres = genres;
                 var b = await repo.GetMusicList();
 
+                int pageSize = 5;
+                IQueryable<Music> songs = await repo.Incl();
+
+                if (id != 0)
+                {
+                    songs = songs.Where(p => p.Genre.Id == id);
+                }
+                if (!string.IsNullOrEmpty(title))
+                {
+                    songs = songs.Where(p => p.Title == title);
+                }
+
+                // После фильтрации и Include, применяем пагинацию
+                var count = await songs.CountAsync();
+
+                var items = await songs.Skip((page - 1) * pageSize).Take(pageSize).ToListAsync();
+
+                // формируем модель представления
+                IndexViewModel viewModel = new IndexViewModel(
+                    items,
+                    new PageViewModel(count, page, pageSize),
+                    new FilterViewModel(await genro.GetGenresList(), id, title)
+                );
+
                 return View(new CombinedMessages
                 {
-                    Musics = b
+                    Musics = viewModel,
                 });
+
+                return View(viewModel);
+
+
+
+                //return View(new CombinedMessages
+                //{
+                //    Musics = b
+                //});
             }
             else
             {
@@ -115,9 +152,19 @@ namespace MusicPortal.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(IFormFile music, IFormFile poster,[Bind("Id,Title")] Music musicModel,int genre)
         {
-            var g = genro.GetGenresList();
-            musicModel.Genre = g.Result[genre-1];
-            musicModel.PosterPath = poster.FileName;
+            var g = await genro.GetGenresList();
+                        
+            musicModel.Genre = await genro.GetGenre(genre);
+            if (poster == null)
+            {
+                musicModel.PosterPath = " ";
+            }
+            else
+            {
+                musicModel.PosterPath = poster.FileName;
+            }
+           
+           
             musicModel.MusicPath = music.FileName;
           
                 if (music != null)
@@ -198,7 +245,7 @@ namespace MusicPortal.Controllers
                 genro.Create(genre);
                 genro.Save();
             }
-            return View();
+            return RedirectToAction("Index", "MusicModels");
 
 
         }

@@ -48,8 +48,11 @@
             width: 200px;
         }
 
-         
 
+    .Filter{
+        display:flex;
+        align-items:flex-end;
+    }
 </style>
 
 
@@ -60,24 +63,22 @@
 
         <a asp-action="Create">Create New</a>
     </p>
-
+@if (ViewBag.Name == "Admin")
+{
+    <p>
+        <a asp-action="CreateGenre">Create New Genre</a>
+    </p>
+}
 
 <div class="search-wrapper">
-    <div>
-        <input type="text" placeholder="Поиск...">
-    </div>
-    <div>
-        <label asp-for="@Model.Music.Genre" class="control-label"></label>
-          @if (ViewBag.Name == "Admin")
-          {
-             <p>
-
-            <a asp-action="CreateGenre">Create New</a>
-            </p>
-        }
-
-
-        <form asp-action="DeleteGenre" method="post">
+    <form method="get" class="Filter">
+        <div>
+            <input name="title" value="@Model.Musics.FilterViewModel.SelectedTitle" type="text" placeholder="Поиск...">
+        </div>
+        <div>
+            <div>
+            <label asp-for="@Model.Music.Genre" class="control-label"></label>
+       
             <select name="id" class="form-control">
                 <option value="">Выберите жанр</option>
                 @if (ViewBag.Genres != null)
@@ -92,16 +93,22 @@
             {
                 <button type="submit" class="btn btn-sm btn-outline-secondary">Delete</button>
             }
-        </form>
+            <span asp-validation-for="@Model.Music.Genre" class="text-danger"></span>
 
+            </div>
+            
+       
 
-        
-        <span asp-validation-for="@Model.Music.Genre" class="text-danger"></span>
-    </div>
+        </div>
+        <div>
+            <button type="submit" value="Filter" class="btn btn-sm btn-danger">Search</button>
+        </div>
+    </form>
 </div>
 
+
 <div class="row">
-    @foreach (var item in Model.Musics)
+    @foreach (var item in Model.Musics.Musics)
     {
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
@@ -135,5 +142,14 @@
             </div>
         </div>
     }
+
+  
+    
+
 </div>
+<page-link page-model="@Model.Musics.PageViewModel" page-action="Index"
+           page-url-position="@(Model.Musics.FilterViewModel.SelectedTitle)"
+           page-url-team="@(Model.Musics.FilterViewModel.SelectedGenre)"></page-link>
+
+
 
