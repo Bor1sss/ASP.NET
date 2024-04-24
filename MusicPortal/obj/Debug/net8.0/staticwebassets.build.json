@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XEFT2FAWAN1k9+K9HxRY/BSsrqnEU1Nt1H9BWEa5JHc=",
+  "Hash": "kIKmrhVCPI0a4ycUur1PR+wk4SJncn2eGq5uf5LkaeU=",
   "Source": "MusicPortal",
   "BasePath": "_content/MusicPortal",
   "Mode": "Default",
@@ -148,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Giga.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MusicPortal\\wwwroot\\Images\\react_09_.png",
+      "SourceId": "MusicPortal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MusicPortal\\wwwroot\\",
+      "BasePath": "_content/MusicPortal",
+      "RelativePath": "Images/react_09_.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\react_09_.png"
     },
     {
       "Identity": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MusicPortal\\wwwroot\\Images\\sticker.jpg",

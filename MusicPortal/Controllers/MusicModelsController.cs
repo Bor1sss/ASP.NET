@@ -13,6 +13,7 @@ using MusicPortal.Models.IRepository.Genre;
 using MusicPortal.Models.IRepository.Music;
 using MusicPortal.Models.MusicModel;
 using MusicPortal.Models.ViewModels;
+using MusicPortal.Models.ViewModels.Sort;
 using Repository;
 
 namespace MusicPortal.Controllers
@@ -42,7 +43,7 @@ namespace MusicPortal.Controllers
             return File(System.IO.File.OpenRead(filePath), "audio/mp4", Path.GetFileName(filePath));
         }
         // GET: MusicModels
-        public async Task<IActionResult> Index(string title, int id = 0, int page = 1)
+        public async Task<IActionResult> Index(string title, int id = 0, int page = 1, SortState sortOrder = SortState.NameAsc)
         {
 
             var login = HttpContext.Session.GetString("Login");
@@ -68,16 +69,24 @@ namespace MusicPortal.Controllers
                     songs = songs.Where(p => p.Title == title);
                 }
 
+
+                songs = sortOrder switch
+                {
+                    SortState.NameDesc => songs.OrderByDescending(s => s.Title),
+                    SortState.AgeAsc => songs.OrderBy(s => s.Genre.Title),
+                    SortState.AgeDesc => songs.OrderByDescending(s => s.Genre.Title),
+                    _ => songs.OrderBy(s => s.Title),
+   
+                };
                 // После фильтрации и Include, применяем пагинацию
                 var count = await songs.CountAsync();
 
                 var items = await songs.Skip((page - 1) * pageSize).Take(pageSize).ToListAsync();
-
-                // формируем модель представления
                 IndexViewModel viewModel = new IndexViewModel(
                     items,
                     new PageViewModel(count, page, pageSize),
-                    new FilterViewModel(await genro.GetGenresList(), id, title)
+                    new FilterViewModel(await genro.GetGenresList(), id, title),
+                    new SortViewModel(sortOrder)
                 );
 
                 return View(new CombinedMessages
