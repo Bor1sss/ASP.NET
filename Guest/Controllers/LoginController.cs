@@ -50,10 +50,9 @@ namespace Guest.Controllers
 
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(Models.LoginRegModel.LoginModel logon)
+        public async Task<IActionResult> Login(string Login,string Password)
         {
-            if (ModelState.IsValid)
+            if (Login!=null&&Password!=null)
             {
                 List<Users> b = await repo.GetAllUsers();
                 if (b.Count == 0)
@@ -61,7 +60,7 @@ namespace Guest.Controllers
                     ModelState.AddModelError("", "Wrong login or password!");
                     return RedirectToAction("Index");
                 }
-                var users = b.Where(a => a.Name == logon.Login);
+                var users = b.Where(a => a.Name == Login);
                 if (users.ToList().Count == 0)
                 {
                     ModelState.AddModelError("", "Wrong login or password!");
@@ -71,7 +70,7 @@ namespace Guest.Controllers
                 string? salt = user.Salt;
 
 
-                byte[] password = Encoding.Unicode.GetBytes(salt + logon.Password);
+                byte[] password = Encoding.Unicode.GetBytes(salt +Password);
 
                
                 byte[] byteHash = SHA256.HashData(password);

@@ -4,84 +4,127 @@
     ViewData["Title"] = "Index";
 }
 
-<div class="header">
-<h1>Forum</h1>
-@if (@Context.Session.GetString("Login") == null)
-{
-    <div class="Account">
-        <h2>Hello, Guest</h2>
-    </div>
-}
-else
-{
-    <div class="Account">
-        <h2>Hello, @Context.Session.GetString("Login")</h2>
-            <a asp-action="BackToLog">Выйти с аккаунта?</a>
+@section Scripts {
+    <script>
+            $(document).ready(function () {
+                function loadMessages() {
+                    $.ajax({
+                        url: '@Url.Action("GetMessages", "Messages")',
+                        type: 'GET',
+                        contentType: 'application/json', // Устанавливаем тип содержимого
+                        success: function (response) {
+                            console.log(response)
+                            var messageContainer = $('.mess');
 
-    </div>
-}
-</div>
-<section class="mess">
-    @foreach (var message in Model.Messages!)
-    {  
-        @if (@Context.Session.GetString("Login") == message.User?.Name)
-        {
-            <div class="wrap myMess">
-                <div class="message ">
-          
-                    <div class="mestop">
+                 
+                        getSessionValue("Login")
+                            .then(function (loginValue) {
+                                messageContainer.empty();
 
-                    <p>@message.User?.Name </p>
-                    
-                    <p>@message.Message</p>
+                                // Проходим по массиву сообщений
+                                for (let i = 0; i < response.length; i++) {
+                                    let message = response[i];
+                                    // Создаем HTML элемент для каждого сообщения
 
-                    <p>@message.MessageDate</p>
-                        <form asp-action="Delete" method="post">
-                            <input type="hidden" name="id" asp-for="@message.Id" value="@message.Id" />
-                            <input type="submit" value="Delete" class="btn btn-danger" />
-                        </form>
+                                    if (message.user.name == loginValue) {
+                                        var messageHtml = '<div class="wrap myMess">';
+                                        messageHtml += `<div class="message">`;
+                                    }
+                                    else {
+                                        var messageHtml = '<div class="wrap">';
+                                        messageHtml += `<div class="message">`;
+                                    }
+                                    messageHtml += '<div class="mestop">';
+                                    messageHtml += '<p>Name: ' + message.user.name + '</p>';
+                                    messageHtml += '<p>Message: ' + message.message + '</p>';
+                                    messageHtml += '<p>Date: ' + message.messageDate + '</p>';
+                                    messageHtml += '</div>';
+                                    messageHtml += '</div>';
+                                    if (message.user.name == loginValue) {
+                                        messageHtml += '</div>';
+                                    }
+                                   
+                                    messageContainer.append(messageHtml);
+                                }
+                              
+                            })
+                         
 
-                        
-                    </div>
-                    
-                </div>
-            </div>
-           }
-            else
-            {
-                <div class="message">
-                <div class="mestop ">
+                        },
+                        error: function (jqXHR, statusText, error) {
+                            console.log(jqXHR.status + '\n' + statusText + '\n' + error);
+                        }
 
-                    <p>@message.User?.Name </p>
+                    });
 
-                    <p>@message.Message</p>
+                }
 
-                    <p>@message.MessageDate</p>
-
-
-                </div>
-        
-            </div>
+                loadMessages();
+            function getSessionValue(key) {
+                return new Promise(function (resolve, reject) {
+                    $.ajax({
+                        url: '@Url.Action("GetSessionValue", "Messages")', // Путь к методу контроллера
+                        type: 'GET',
+                        data: { key: key }, // Передаем ключ сессии
+                        success: function (response) {
+                            resolve(response); // Возвращаем значение сессии
+                        },
+                        error: function (jqXHR, statusText, error) {
+                            reject(error); // Обработка ошибки
+                        }
+                    });
+                });
             }
 
+                $("#btn-send").on("click", function () {
+                    let formData = new FormData();
+                    formData.append("message", $("#input_mess").val());
+                    console.log($("#input_mess").val())
        
+                    $.ajax({
+                        type: 'POST',
+                        url: '@Url.Action("Create", "Messages")',
+                        contentType: false,
+                        processData: false,
+                        data: formData,
+                        success: function (response) {
+                            alert(response);
+                            loadMessages();
+                        },
+                        error: function (jqXHR, statusText, error) {
+                            console.log(jqXHR.status + '\n' + statusText + '\n' + error);
+                        }
+                    });
+                });
+
+            });
+
+    </script>
     }
-    @if (@Context.Session.GetString("Login") != null && Context.Session.GetString("Login")!="Guest")
+<div class="header">
+    <h1>Forum</h1>
+    @if (@Context.Session.GetString("Login") == null)
     {
-        <form asp-action="Create">
-                <div class="message-input">
-                <input asp-for="MessageModel.Message" type="text" name="Message" placeholder="Введите ваше сообщение" />
-                <input type="submit" value="Отправить">
-            </div>
-        </form>
-        
-       
+        <div class="Account">
+            <h2>Hello, Guest</h2>
+        </div>
     }
-
-
+    else
+    {
+        <div class="Account">
+            <h2>Hello, @Context.Session.GetString("Login")</h2>
+            <a id="logoutLink" href="#">Выйти с аккаунта?</a>
+        </div>
+    }
+</div>
+<section class="mess">
+    <!-- Message section will be loaded here -->
 </section>
-@section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
+<form id="messageForm" asp-action="Create">
+    <div class="message-input">
+        <input asp-for="MessageModel.Message" id="input_mess" type="text" name="Message" placeholder="Введите ваше сообщение" />
+            <a href="javascript:void(0)" class="btn btn-primary" id="btn-send">Sedndt</a></td>
+    </div>
+</form>
+
 }

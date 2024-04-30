@@ -3,88 +3,91 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using Guest.Models;
 using Guest.Repository;
-using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
-using NuGet.Protocol.Core.Types;
+using Newtonsoft.Json;
 
 namespace Guest.Controllers
 {
     public class MessagesController : Controller
     {
+        private readonly IRepositoryMessage _messageRepository;
+        private readonly IRepositoryUser _userRepository;
 
-        IRepositoryMessage repo;
-      
-        IRepositoryUser repoU;
-
-        public MessagesController(IRepositoryMessage r, IRepositoryUser repoU)
+        public MessagesController(IRepositoryMessage messageRepository, IRepositoryUser userRepository)
         {
-            repo = r;
-            this.repoU = repoU;
+            _messageRepository = messageRepository;
+            _userRepository = userRepository;
         }
 
         // GET: Messages
         public async Task<IActionResult> Index()
         {
-         
-            var model = await repo.GetMessageList();
-
-            return View(new CombinedMessages
-            {
-                Messages = model
-            });
+      
+            return View();
         }
 
-        
-
-       public IActionResult BackToLog()
+        [HttpGet]
+        public async Task<IActionResult> GetMessages()
+        {
+            List<Messages> list = await _messageRepository.GetMessageList();
+            
+            //string response = JsonConvert.SerializeObject(list);
+            
+            return Json(list);
+        }
+        public IActionResult BackToLog()
         {
             HttpContext.Session.SetString("Login", "");
             return RedirectToAction("Index", "Register");
         }
+        public IActionResult GetSessionValue(string key)
+        {
+            var sessionValue = HttpContext.Session.GetString(key);
+            return Ok(sessionValue); // Возвращаем значение сессии
+        }
 
- 
+
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(string message)
         {
             if (message == null)
             {
-                ModelState.AddModelError("", "Сообщение должно быть не null");
+                return BadRequest("Message cannot be null");
             }
-            Messages mes = new Messages();
-            mes.Message= message;   
-            mes.MessageDate= DateTime.Now;
-            var login = HttpContext.Session.GetString("Login");
-          
-            mes.User= await repoU.GetUserByLoginAsync(login);
-            
-            if (ModelState.IsValid)
+
+            var userLogin = HttpContext.Session.GetString("Login");
+            var user = await _userRepository.GetUserByLoginAsync(userLogin);
+            if (user == null)
             {
-           
-                await repo.Create(mes);
-                await repo.Save();
-               
+                return BadRequest("User not found");
             }
-            return RedirectToAction(nameof(Index));
+
+            var newMessage = new Messages
+            {
+                Message = message,
+                MessageDate = DateTime.Now,
+                User = user
+            };
+
+            await _messageRepository.Create(newMessage);
+            await _messageRepository.Save();
+
+            return Ok();
         }
 
-        // POST: Messages/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        [HttpPost]
+        public async Task<IActionResult> Delete(int id)
         {
-             await repo.Delete(id);
-          
-            return RedirectToAction(nameof(Index));
-        }
+            List<Messages> list = await _messageRepository.GetMessageList();
+             
+            if (!(list?.Any(e => e.Id == id)).GetValueOrDefault())
+            {
+                return NotFound("Message not found");
+            }
 
-        private async Task<bool> MessagesExists(int id)
-        {
-            List<Messages> list = await repo.GetMessageList();
-            return (list?.Any(e => e.Id == id)).GetValueOrDefault();
+            await _messageRepository.Delete(id);
+            return Ok();
         }
     }
 }

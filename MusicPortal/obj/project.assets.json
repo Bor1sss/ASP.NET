@@ -2744,6 +2744,29 @@
             "rid": "win"
           }
         }
+      },
+      "MusicPortal.BLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "MusicPortal.DAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MusicPortal.BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MusicPortal.BLL.dll": {}
+        }
+      },
+      "MusicPortal.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/MusicPortal.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MusicPortal.DAL.dll": {}
+        }
       }
     }
   },
@@ -7828,13 +7851,24 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "MusicPortal.BLL/1.0.0": {
+      "type": "project",
+      "path": "../MusicPortal.BLL/MusicPortal.BLL.csproj",
+      "msbuildProject": "../MusicPortal.BLL/MusicPortal.BLL.csproj"
+    },
+    "MusicPortal.DAL/1.0.0": {
+      "type": "project",
+      "path": "../MusicPortal.DAL/MusicPortal.DAL.csproj",
+      "msbuildProject": "../MusicPortal.DAL/MusicPortal.DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.3",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.4",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.2"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.2",
+      "MusicPortal.BLL >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7863,7 +7897,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MusicPortal.BLL\\MusicPortal.BLL.csproj": {
+              "projectPath": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MusicPortal.BLL\\MusicPortal.BLL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

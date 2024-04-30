@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace Guest.Models
 {
@@ -10,7 +11,7 @@ namespace Guest.Models
         [Required(ErrorMessage = "Поле не должно быть пустым!")]
         public string Message { get; set; }
         public DateTime MessageDate { get; set; }
-
+     
         public Users? User { get; set; }
     }
 

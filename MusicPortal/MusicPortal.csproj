@@ -19,4 +19,8 @@
     <Folder Include="wwwroot\Music\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MusicPortal.BLL\MusicPortal.BLL.csproj" />
+  </ItemGroup>
+
 </Project>

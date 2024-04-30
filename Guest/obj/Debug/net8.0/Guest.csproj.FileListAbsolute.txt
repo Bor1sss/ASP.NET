@@ -503,3 +503,4 @@ C:\Users\solt2\Desktop\ASP\ASP.NET\Guest\obj\Debug\net8.0\refint\Guest.dll
 C:\Users\solt2\Desktop\ASP\ASP.NET\Guest\obj\Debug\net8.0\Guest.pdb
 C:\Users\solt2\Desktop\ASP\ASP.NET\Guest\obj\Debug\net8.0\Guest.genruntimeconfig.cache
 C:\Users\solt2\Desktop\ASP\ASP.NET\Guest\obj\Debug\net8.0\ref\Guest.dll
+C:\Users\solt2\Desktop\ASP\ASP.NET\Guest\bin\Debug\net8.0\libman.json

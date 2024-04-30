@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 namespace Guest.Models
 {
     public class Users
@@ -11,6 +12,7 @@ namespace Guest.Models
         public string Password { get; set; }
 
         public string? Salt { get; set; }
+        [JsonIgnore]
         public ICollection<Messages>? Messages { get; set; }
 
     }

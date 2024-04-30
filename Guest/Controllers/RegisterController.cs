@@ -51,13 +51,13 @@ namespace Guest.Controllers
 
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register(Register reg)
+        public async Task<IActionResult> Register(string Login, string Password,string ConfirmPassword)
         {
-            if (ModelState.IsValid)
+            if (Login != null && Password != null && ConfirmPassword==Password)
             {
+  
                 Users user = new Users();
-                user.Name = reg.Login;
+                user.Name = Login;
 
                 byte[] saltbuf = new byte[16];
 
@@ -70,7 +70,7 @@ namespace Guest.Controllers
                 string salt = sb.ToString();
 
                 //переводим пароль в байт-массив  
-                byte[] password = Encoding.Unicode.GetBytes(salt + reg.Password);
+                byte[] password = Encoding.Unicode.GetBytes(salt + Password);
 
                 //вычисляем хеш-представление в байтах  
                 byte[] byteHash = SHA256.HashData(password);
@@ -85,7 +85,7 @@ namespace Guest.Controllers
                 HttpContext.Session.SetString("Login",user.Name);
                 return RedirectToAction("Index", "Messages");
             }
-            return RedirectToAction("Index");
+            return RedirectToAction("Register", "Index");
         }
 
 
