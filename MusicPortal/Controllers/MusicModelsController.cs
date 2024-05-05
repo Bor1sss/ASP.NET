@@ -3,32 +3,35 @@ using System.Collections.Generic;
 using System.Drawing.Printing;
 using System.Linq;
 using System.Threading.Tasks;
+using GenrePortal.BLL.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.CodeAnalysis.Elfie.Diagnostics;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Models;
-using MusicPortal.Models.IRepository.Genre;
-using MusicPortal.Models.IRepository.Music;
-using MusicPortal.Models.MusicModel;
+using MusicPortal.BLL.DTO;
+using MusicPortal.BLL.Interfaces;
 using MusicPortal.Models.ViewModels;
 using MusicPortal.Models.ViewModels.Sort;
-using Repository;
+using UserPortal.BLL.Interfaces;
+
 
 namespace MusicPortal.Controllers
 {
     public class MusicModelsController : Controller
     {
+        public IWebHostEnvironment _appEnvironment { get; }
 
-        IMusicRep repo;
-        IRepositoryUser repoU;
-        IGenreRep genro;
-        public MusicModelsController(IMusicRep r, IRepositoryUser u, IGenreRep g)
+        IMusicService repo;
+        IUserService repoU;
+        IGenreService genro;
+        public MusicModelsController(IMusicService r, IUserService u, IGenreService g, IWebHostEnvironment appEnvironment)
         {
             repo = r;
-            repoU= u;
+            repoU = u;
             genro = g;
+            _appEnvironment = appEnvironment;
         }
 
 
@@ -37,7 +40,7 @@ namespace MusicPortal.Controllers
         {
 
             var m = "Music/" + musicPath;
-            var filePath = Path.Combine(repo._appEnvironment.WebRootPath, m);
+            var filePath = Path.Combine(_appEnvironment.WebRootPath, m);
 
             // Отправляем файл для скачивания
             return File(System.IO.File.OpenRead(filePath), "audio/mp4", Path.GetFileName(filePath));
@@ -51,18 +54,18 @@ namespace MusicPortal.Controllers
             if (login != ""&&login!=null)
             {
                 ViewBag.Name=login;
-                var genres = genro.GetGenresList().Result; // Предполагается, что у тебя есть DbContext _dbContext и модель Genre
+                var genres = genro.GetGenres().Result; // Предполагается, что у тебя есть DbContext _dbContext и модель Genre
 
                
                 ViewBag.Genres = genres;
-                var b = await repo.GetMusicList();
+                var b = await repo.GetMusics();
 
                 int pageSize = 5;
-                IQueryable<Music> songs = await repo.Incl();
+                IQueryable<MusicDTO> songs = await repo.Incl();
 
                 if (id != 0)
                 {
-                    songs = songs.Where(p => p.Genre.Id == id);
+                    songs = songs.Where(p => p.GenreID == id);
                 }
                 if (!string.IsNullOrEmpty(title))
                 {
@@ -73,19 +76,19 @@ namespace MusicPortal.Controllers
                 songs = sortOrder switch
                 {
                     SortState.NameDesc => songs.OrderByDescending(s => s.Title),
-                    SortState.AgeAsc => songs.OrderBy(s => s.Genre.Title),
-                    SortState.AgeDesc => songs.OrderByDescending(s => s.Genre.Title),
+                    SortState.AgeAsc => songs.OrderBy(s => s.Genre),
+                   SortState.AgeDesc => songs.OrderByDescending(s => s.Genre),
                     _ => songs.OrderBy(s => s.Title),
    
                 };
                 // После фильтрации и Include, применяем пагинацию
-                var count = await songs.CountAsync();
+                var count = songs.Count();
 
-                var items = await songs.Skip((page - 1) * pageSize).Take(pageSize).ToListAsync();
+                var items =  songs.Skip((page - 1) * pageSize).Take(pageSize).ToList();
                 IndexViewModel viewModel = new IndexViewModel(
                     items,
                     new PageViewModel(count, page, pageSize),
-                    new FilterViewModel(await genro.GetGenresList(), id, title),
+                    new FilterViewModel((await genro.GetGenres()).ToList(), id, title),
                     new SortViewModel(sortOrder)
                 );
 
@@ -134,10 +137,10 @@ namespace MusicPortal.Controllers
             var login = HttpContext.Session.GetString("Login");
             if (login != "Guest")
             {
-                var verified = repoU.GetUserByLoginAsync(login).Result;
+                var verified = repoU.GetUserByLogin(login).Result;
                 if (verified.isVerified)
                 {
-                    var genres = genro.GetGenresList().Result;
+                    var genres = genro.GetGenres().Result;
 
 
                     ViewBag.Genres = genres;
@@ -159,11 +162,11 @@ namespace MusicPortal.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(IFormFile music, IFormFile poster,[Bind("Id,Title")] Music musicModel,int genre)
+        public async Task<IActionResult> Create(IFormFile music, IFormFile poster,[Bind("Id,Title")] MusicDTO musicModel,int genre)
         {
-            var g = await genro.GetGenresList();
+            var g = await genro.GetGenres();
                         
-            musicModel.Genre = await genro.GetGenre(genre);
+            musicModel.GenreID = (await genro.GetGenre(genre)).Id;
             if (poster == null)
             {
                 musicModel.PosterPath = " ";
@@ -183,20 +186,20 @@ namespace MusicPortal.Controllers
                     string path2 = "/Music/" + music.FileName;
 
 
-                    using (var fileStream = new FileStream(repo._appEnvironment.WebRootPath + path, FileMode.Create))
+                    using (var fileStream = new FileStream(_appEnvironment.WebRootPath + path, FileMode.Create))
                     {
                         await poster.CopyToAsync(fileStream);
                     }
-                    using (var fileStream2 = new FileStream(repo._appEnvironment.WebRootPath + path2, FileMode.Create))
+                    using (var fileStream2 = new FileStream(_appEnvironment.WebRootPath + path2, FileMode.Create))
                     {
                         await music.CopyToAsync(fileStream2);
                     }
-                    repo.Create(musicModel);
-                    repo.Save();
+                    await repo.CreateMusic(musicModel);
+                     await  repo.Save();
                     return RedirectToAction(nameof(Index));
                 }
       
-            var genres = genro.GetGenresList().Result; // Предполагается, что у тебя есть DbContext _dbContext и модель Genre
+            var genres = genro.GetGenres().Result; // Предполагается, что у тебя есть DbContext _dbContext и модель Genre
 
             // Помещение списка жанров в ViewBag
             ViewBag.Genres = genres;
@@ -212,7 +215,7 @@ namespace MusicPortal.Controllers
             var login = HttpContext.Session.GetString("Login");
             if (login != "Guest")
             {
-                var verified = repoU.GetUserByLoginAsync(login).Result;
+                var verified = repoU.GetUserByLogin(login).Result;
                 if (verified.isVerified)
                 {
 
@@ -235,7 +238,7 @@ namespace MusicPortal.Controllers
             var login = HttpContext.Session.GetString("Login");
             if (login != "Guest" && login=="Admin")
             {
-                await genro.Delete(id);
+                await genro.DeleteGenre(id);
                 await genro.Save();
                 return RedirectToAction("Index", "MusicModels");
 
@@ -247,11 +250,11 @@ namespace MusicPortal.Controllers
 
         }
         
-        public async Task<IActionResult> CreateGenre1([Bind("Id,Title")] Genre genre)
+        public async Task<IActionResult> CreateGenre1([Bind("Id,Title")] GenreDTO genre)
         {
             if (ModelState.IsValid && genro.GetGenreByName(genre.Title)!=null)
             {
-                genro.Create(genre);
+                await genro.CreateGenre(genre);
                 genro.Save();
             }
             return RedirectToAction("Index", "MusicModels");
@@ -261,7 +264,7 @@ namespace MusicPortal.Controllers
         public async Task<IActionResult> Edit(int? id)
         {
 
-            var genres = genro.GetGenresList().Result;
+            var genres = genro.GetGenres().Result;
 
 
             ViewBag.Genres = genres;
@@ -281,10 +284,10 @@ namespace MusicPortal.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(IFormFile music, IFormFile poster, int id, [Bind("Id,Title")] Music musicModel, int genre)
+        public async Task<IActionResult> Edit(IFormFile music, IFormFile poster, int id, [Bind("Id,Title")] MusicDTO musicModel, int genre)
         {
-            var g = genro.GetGenresList();
-            musicModel.Genre = g.Result[genre - 1];
+            var g = genro.GetGenres();
+            //musicModel.GenreID = g.Result[genre - 1];
             musicModel.PosterPath = poster.FileName;
             musicModel.MusicPath = music.FileName;
 
@@ -295,11 +298,11 @@ namespace MusicPortal.Controllers
                 string path2 = "/Music/" + music.FileName;
 
 
-                using (var fileStream = new FileStream(repo._appEnvironment.WebRootPath + path, FileMode.Create))
+                using (var fileStream = new FileStream(_appEnvironment.WebRootPath + path, FileMode.Create))
                 {
                     await poster.CopyToAsync(fileStream);
                 }
-                using (var fileStream2 = new FileStream(repo._appEnvironment.WebRootPath + path2, FileMode.Create))
+                using (var fileStream2 = new FileStream(_appEnvironment.WebRootPath + path2, FileMode.Create))
                 {
                     await music.CopyToAsync(fileStream2);
                 }
@@ -308,7 +311,7 @@ namespace MusicPortal.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            var genres = genro.GetGenresList().Result; 
+            var genres = genro.GetGenres().Result; 
 
          
             ViewBag.Genres = genres;
@@ -318,7 +321,7 @@ namespace MusicPortal.Controllers
 
         public async Task<IActionResult> Delete(int? id)
         {
-            var genres = genro.GetGenresList().Result;
+            var genres = genro.GetGenres().Result;
             if (id == null)
             {
                 return NotFound();
@@ -339,14 +342,14 @@ namespace MusicPortal.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
           
-           await repo.Delete(id);
-           await repo.Save();
+           await repo.DeleteMusic(id);
+           repo.Save();
             return RedirectToAction(nameof(Index));
         }
 
         private async Task<bool> MusicModelExists(int id)
         {
-            List<Music> list = await repo.GetMusicList();
+            List<MusicDTO> list = (await repo.GetMusics()).ToList();
             return (list?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }

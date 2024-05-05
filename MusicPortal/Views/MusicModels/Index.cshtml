@@ -1,7 +1,6 @@
 ﻿@using Models
 @using MusicPortal.Models.ViewModels.Sort
 @model CombinedMessages;
-
 @{
     ViewData["Title"] = "Index";
 }
@@ -102,9 +101,9 @@
         </div>
         <div>
             <div>
-            <label asp-for="@Model.Music.Genre" class="control-label"></label>
+            <label asp-for="@Model.Music.GenreID" class="control-label"></label>
        
-            <select name="id" class="form-control">
+            <select name="genre" class="form-control">
                 <option value="">Выберите жанр</option>
                 @if (ViewBag.Genres != null)
                 {
@@ -117,9 +116,9 @@
 
                
        
-            <span asp-validation-for="@Model.Music.Genre" class="text-danger"></span>
+            <span asp-validation-for="@Model.Music.GenreID" class="text-danger"></span>
 
-            </div>
+         </div>
             
        
 
@@ -133,6 +132,7 @@
         </div>
     </form>
 </div>
+
 <div class="Sort">
     <th>
         <a asp-action="Index"
@@ -180,7 +180,7 @@
                 <img class="card-img-top" src="Images/@item.PosterPath" alt="Poster">
                 <div class="card-body">
                     <h5 class="card-title">@item.Title</h5>
-                    <p class="card-title">@item.Genre.Title</p>
+                    <p class="card-title">@item.GenreID</p>
                     <audio src="@Url.Content(item.MusicPath)" id="@($"audio-{item.Id}")" preload="auto"></audio>
                     <div class="d-flex justify-content-between align-items-center flex-wrap">
                         <div class="btn-group">

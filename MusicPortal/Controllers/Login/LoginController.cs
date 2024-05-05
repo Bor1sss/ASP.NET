@@ -7,18 +7,17 @@ using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
 using System.Text;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
-using Repository;
-using MusicPortal.Models.User;
-using Guest.Models.LoginRegModel;
-using NuGet.Protocol.Plugins;
+using UserPortal.BLL.Interfaces;
+using MusicPortal.BLL.DTO;
+using MusicPortal.BLL.DTO.LoginRegDTO;
 
 namespace Controllers
 {
     public class LoginController : Controller
     {
-        IRepositoryUser repo;
+        IUserService repo;
 
-        public LoginController(IRepositoryUser r)
+        public LoginController(IUserService r)
         {
             repo = r;
         }
@@ -60,11 +59,11 @@ namespace Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(LoginModel logon)
+        public async Task<IActionResult> Login(LoginDTO logon)
         {
             if (ModelState.IsValid)
             {
-                List<User> b = await repo.GetAllUsers();
+                List<UserDTO> b = (await repo.GetUsers()).ToList();
                 if (b.Count == 0)
                 {
                     ModelState.AddModelError("", "Wrong login or password!");

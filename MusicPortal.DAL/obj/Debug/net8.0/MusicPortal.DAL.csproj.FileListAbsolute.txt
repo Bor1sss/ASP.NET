@@ -1,0 +1,13 @@
+C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal.DAL\obj\Debug\net8.0\MusicPortal.DAL.csproj.AssemblyReference.cache
+C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal.DAL\obj\Debug\net8.0\MusicPortal.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal.DAL\obj\Debug\net8.0\MusicPortal.DAL.AssemblyInfoInputs.cache
+C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal.DAL\obj\Debug\net8.0\MusicPortal.DAL.AssemblyInfo.cs
+C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal.DAL\obj\Debug\net8.0\MusicPortal.DAL.csproj.CoreCompileInputs.cache
+C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal.DAL\obj\Debug\net8.0\MusicPortal.DAL.sourcelink.json
+C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal.DAL\bin\Debug\net8.0\MusicPortal.DAL.deps.json
+C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal.DAL\bin\Debug\net8.0\MusicPortal.DAL.dll
+C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal.DAL\bin\Debug\net8.0\MusicPortal.DAL.pdb
+C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal.DAL\obj\Debug\net8.0\MusicPortal.DAL.dll
+C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal.DAL\obj\Debug\net8.0\refint\MusicPortal.DAL.dll
+C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal.DAL\obj\Debug\net8.0\MusicPortal.DAL.pdb
+C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal.DAL\obj\Debug\net8.0\ref\MusicPortal.DAL.dll

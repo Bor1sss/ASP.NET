@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "AutoMapper/13.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Azure.Core/1.35.0": {
         "type": "package",
         "dependencies": {
@@ -1312,12 +1328,12 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Design/8.0.4": {
+      "Microsoft.EntityFrameworkCore.Design/8.0.3": {
         "type": "package",
         "dependencies": {
           "Humanizer.Core": "2.14.1",
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.5.0",
-          "Microsoft.EntityFrameworkCore.Relational": "8.0.4",
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.3",
           "Microsoft.Extensions.DependencyModel": "8.0.0",
           "Mono.TextTemplating": "2.2.1"
         },
@@ -1335,10 +1351,10 @@
           "build/net8.0/Microsoft.EntityFrameworkCore.Design.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.4": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.3": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.4",
+          "Microsoft.EntityFrameworkCore": "8.0.3",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -1369,10 +1385,10 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/8.0.4": {
+      "Microsoft.EntityFrameworkCore.Tools/8.0.3": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "8.0.4"
+          "Microsoft.EntityFrameworkCore.Design": "8.0.3"
         },
         "compile": {
           "lib/net8.0/_._": {}
@@ -2749,6 +2765,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "AutoMapper": "13.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.3",
           "MusicPortal.DAL": "1.0.0"
         },
         "compile": {
@@ -2761,6 +2779,9 @@
       "MusicPortal.DAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.4"
+        },
         "compile": {
           "bin/placeholder/MusicPortal.DAL.dll": {}
         },
@@ -2771,6 +2792,21 @@
     }
   },
   "libraries": {
+    "AutoMapper/13.0.1": {
+      "sha512": "/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
+      "type": "package",
+      "path": "automapper/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.13.0.1.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/net6.0/AutoMapper.dll",
+        "lib/net6.0/AutoMapper.xml"
+      ]
+    },
     "Azure.Core/1.35.0": {
       "sha512": "hENcx03Jyuqv05F4RBEPbxz29UrM3Nbhnr6Wl6NQpoU9BCIbL3XLentrxDCTrH54NLS11Exxi/o8MYgT/cnKFA==",
       "type": "package",
@@ -4939,10 +4975,10 @@
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Design/8.0.4": {
-      "sha512": "QD5/h3+h4N7GlUaA4bzaYFW9CoeB7ne2KMiDIENIT0GPx+E6up/v9fDA36FAS3NIq9zeKUAQgN8aj6IwE7tMGw==",
+    "Microsoft.EntityFrameworkCore.Design/8.0.3": {
+      "sha512": "OAh9P0M5VK3+mtmnjOyyw92s3L0r3fmYwWWAnh0pb/8JH3u7L2FmrJnNPFysChBiWIJu17+6Bqj4k/bkFK4RVw==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.design/8.0.4",
+      "path": "microsoft.entityframeworkcore.design/8.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4951,14 +4987,14 @@
         "build/net8.0/Microsoft.EntityFrameworkCore.Design.props",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Design.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Design.xml",
-        "microsoft.entityframeworkcore.design.8.0.4.nupkg.sha512",
+        "microsoft.entityframeworkcore.design.8.0.3.nupkg.sha512",
         "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Relational/8.0.4": {
-      "sha512": "aWLT6e9a8oMzXgF0YQpYYa3mDeU+yb2UQSQ+RrIgyGgSpzPfSKgpA7v2kOVDuZr2AQ6NNAlWPaBG7wZuKQI96w==",
+    "Microsoft.EntityFrameworkCore.Relational/8.0.3": {
+      "sha512": "8JnVZHWaNFkrrD/FC0O4jekiHIYey8y6TQ4Co3OzLz0wd5Dm1cwJfTp++1TvaVu0BBd4bVDtiktppa5epuoPrA==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.relational/8.0.4",
+      "path": "microsoft.entityframeworkcore.relational/8.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4966,7 +5002,7 @@
         "PACKAGE.md",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Relational.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Relational.xml",
-        "microsoft.entityframeworkcore.relational.8.0.4.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.8.0.3.nupkg.sha512",
         "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
@@ -4985,10 +5021,10 @@
         "microsoft.entityframeworkcore.sqlserver.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Tools/8.0.4": {
-      "sha512": "txPWQf+SGx8Aa6Z8FbdQ8zMHckArroaE0AlV6iqnqJp9w46RiOBtkJlkPgohteQS1uhxIwjtHfwFiQATw059fg==",
+    "Microsoft.EntityFrameworkCore.Tools/8.0.3": {
+      "sha512": "jKczLbj13jY6TvYsXgAYqfhkIow6VdqumCv0m8EvNr3vU1+nJ6LKoG+6pPKnkVOHycXHGy5DEhH0GN0ldmx7Kw==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.tools/8.0.4",
+      "path": "microsoft.entityframeworkcore.tools/8.0.3",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -4996,7 +5032,7 @@
         "Icon.png",
         "docs/PACKAGE.md",
         "lib/net8.0/_._",
-        "microsoft.entityframeworkcore.tools.8.0.4.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.8.0.3.nupkg.sha512",
         "microsoft.entityframeworkcore.tools.nuspec",
         "tools/EntityFrameworkCore.PS2.psd1",
         "tools/EntityFrameworkCore.PS2.psm1",
@@ -7866,7 +7902,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.3",
-      "Microsoft.EntityFrameworkCore.Tools >= 8.0.4",
+      "Microsoft.EntityFrameworkCore.Tools >= 8.0.3",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.2",
       "MusicPortal.BLL >= 1.0.0"
     ]
@@ -7927,7 +7963,7 @@
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[8.0.4, )"
+            "version": "[8.0.3, )"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",

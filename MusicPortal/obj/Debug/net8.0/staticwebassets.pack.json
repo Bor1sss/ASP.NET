@@ -17,6 +17,14 @@
       "PackagePath": "staticwebassets\\Images\\Giga.jpg"
     },
     {
+      "Id": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MusicPortal\\wwwroot\\Images\\Screenshot_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\Screenshot_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MusicPortal\\wwwroot\\Images\\photo_2024-04-30_13-06-30.jpg",
+      "PackagePath": "staticwebassets\\Images\\photo_2024-04-30_13-06-30.jpg"
+    },
+    {
       "Id": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MusicPortal\\wwwroot\\Images\\react_09_.png",
       "PackagePath": "staticwebassets\\Images\\react_09_.png"
     },
@@ -25,8 +33,24 @@
       "PackagePath": "staticwebassets\\Images\\sticker.jpg"
     },
     {
+      "Id": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MusicPortal\\wwwroot\\Images\\videoplayback (1).m4a",
+      "PackagePath": "staticwebassets\\Images\\videoplayback (1).m4a"
+    },
+    {
       "Id": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MusicPortal\\wwwroot\\Music\\1.jpg",
       "PackagePath": "staticwebassets\\Music\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MusicPortal\\wwwroot\\Music\\Tic.gif",
+      "PackagePath": "staticwebassets\\Music\\Tic.gif"
+    },
+    {
+      "Id": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MusicPortal\\wwwroot\\Music\\videoplayback (1).m4a",
+      "PackagePath": "staticwebassets\\Music\\videoplayback (1).m4a"
+    },
+    {
+      "Id": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MusicPortal\\wwwroot\\Music\\videoplayback (2).m4a",
+      "PackagePath": "staticwebassets\\Music\\videoplayback (2).m4a"
     },
     {
       "Id": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MusicPortal\\wwwroot\\Music\\videoplayback (4).m4a",

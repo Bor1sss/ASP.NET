@@ -5,21 +5,19 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Guest.Models;
 using System.Security.Cryptography;
 using System.Text;
-using Repository;
-using Guest.Models.LoginRegModel;
-using MusicPortal.Models.User;
+using UserPortal.BLL.Interfaces;
+using MusicPortal.BLL.DTO;
 
 
 namespace Controllers
 {
     public class RegisterController : Controller
     {
-        IRepositoryUser repo;
+        IUserService repo;
 
-        public RegisterController(IRepositoryUser r)
+        public RegisterController(IUserService r)
         {
             repo = r;
         }
@@ -54,11 +52,11 @@ namespace Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register(Register reg)
+        public async Task<IActionResult> Register(RegisterDTO reg)
         {
             if (ModelState.IsValid)
             {
-                User user = new User();
+                UserDTO user = new UserDTO();
                 user.Name = reg.Login;
 
                 byte[] saltbuf = new byte[16];
@@ -83,7 +81,7 @@ namespace Controllers
 
                 user.Password = hash.ToString();
                 user.Salt = salt;
-                repo.Create(user);
+                repo.CreateUser(user);
                 if (user.Name != "Admin")
                 {
                     HttpContext.Session.SetString("Login", user.Name);

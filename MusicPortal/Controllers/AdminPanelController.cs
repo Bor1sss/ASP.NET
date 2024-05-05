@@ -6,19 +6,16 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
-using Models;
-using MusicPortal.Models.MusicModel;
-using MusicPortal.Models.User;
-using NuGet.Protocol.Plugins;
-using Repository;
+using UserPortal.BLL.Interfaces;
+
 
 namespace MusicPortal.Controllers
 {
     public class AdminPanelController : Controller
     {
     
-        IRepositoryUser repoU;
-        public AdminPanelController(IRepositoryUser u)
+        IUserService repoU;
+        public AdminPanelController(IUserService u)
         {
            repoU = u;
         }
@@ -40,7 +37,7 @@ namespace MusicPortal.Controllers
             if (login != "")
             {
                 ViewBag.Name = login;
-                return View(repoU.GetAllUsers().Result);
+                return View(repoU.GetUsers().Result);
             }
             else
             {
@@ -99,7 +96,7 @@ namespace MusicPortal.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
           
-                repoU.Delete(id);
+                repoU.DeleteUser(id);
                 repoU.Save();
 
          
