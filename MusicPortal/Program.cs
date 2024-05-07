@@ -7,6 +7,7 @@ using MusicPortal.BLL.Services;
 using MusicPortal.BLL.Interfaces;
 using GenrePortal.BLL.Interfaces;
 using GenrePortal.BLL.Services;
+using MultilingualSite.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Получаем строку подключения из файла конфигурации
@@ -25,7 +26,7 @@ builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddTransient<IMusicService, MusicService>();
 builder.Services.AddTransient<IGenreService, GenreService>();
 
-
+builder.Services.AddScoped<ILangRead, ReadLangServices>();
 
 
 // Добавляем сервисы MVC

@@ -256,3 +256,8 @@ C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal\obj\Debug\net8.0\refint\MusicPort
 C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal\obj\Debug\net8.0\MusicPortal.pdb
 C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal\obj\Debug\net8.0\MusicPortal.genruntimeconfig.cache
 C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal\obj\Debug\net8.0\ref\MusicPortal.dll
+C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal\obj\Debug\net8.0\MusicPortal.csproj.GenerateResource.cache
+C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal\bin\Debug\net8.0\fr\MusicPortal.resources.dll
+C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal\obj\Debug\net8.0\MusicPortal.Resources.Resource.fr.resources
+C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal\obj\Debug\net8.0\fr\MusicPortal.resources.dll
+C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal\obj\Debug\net8.0\MusicPortal.Resources.Resource.resources

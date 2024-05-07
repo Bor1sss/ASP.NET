@@ -6,18 +6,22 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
+using MusicPortal.BLL.Interfaces;
+using MusicPortal.ViewModels;
 using UserPortal.BLL.Interfaces;
 
 
 namespace MusicPortal.Controllers
 {
+    [Culture]
     public class AdminPanelController : Controller
     {
-    
+        readonly ILangRead _langRead;
         IUserService repoU;
-        public AdminPanelController(IUserService u)
+        public AdminPanelController(IUserService u, ILangRead langRead)
         {
            repoU = u;
+            _langRead = langRead;
         }
 
         public async Task<IActionResult> Verify(int? id)
@@ -46,7 +50,22 @@ namespace MusicPortal.Controllers
             }
      
         }
+        public ActionResult ChangeCulture(string lang)
+        {
+            string? returnUrl = HttpContext.Session.GetString("path") ?? "/Login/Index";
 
+            // Список культур
+            List<string> cultures = _langRead.languageList().Select(t => t.ShortName).ToList()!;
+            if (!cultures.Contains(lang))
+            {
+                lang = "ru";
+            }
+
+            CookieOptions option = new CookieOptions();
+            option.Expires = DateTime.Now.AddDays(10); // срок хранения куки - 10 дней
+            Response.Cookies.Append("lang", lang, option); // создание куки
+            return Redirect(returnUrl);
+        }
         // GET: AdminPanel/Details/5
         public async Task<IActionResult> Details(int? id)
         {

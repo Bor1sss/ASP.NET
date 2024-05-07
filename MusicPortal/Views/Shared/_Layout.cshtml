@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using MusicPortal.DAL.Entities
+@inject MusicPortal.BLL.Interfaces.ILangRead MyLangRead
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -52,6 +54,16 @@
                         }
            
                     </ul>
+                    <form asp-action="ChangeCulture" asp-controller="AdminPanel">
+                        <select name="lang">
+                            <option disabled selected>@Resources.Resource.ChooseLang</option>
+                            @foreach (Language it in MyLangRead.languageList())
+                            {
+                                <option value=@it.ShortName>@it.Name</option>
+                            }
+                        </select>
+                        <input type="submit" name="submit" value="@Resources.Resource.ChooseLang">
+                    </form>
                 </div>
             </div>
         </nav>

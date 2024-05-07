@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Guest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{48F4F7B5-8029-4C8E-8882-8521BD4C9DCB}|Guest.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\guest\\views\\messages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{48F4F7B5-8029-4C8E-8882-8521BD4C9DCB}|Guest.csproj|solutionrelative:views\\messages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{48F4F7B5-8029-4C8E-8882-8521BD4C9DCB}|Guest.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\guest\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48F4F7B5-8029-4C8E-8882-8521BD4C9DCB}|Guest.csproj|solutionrelative:controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48F4F7B5-8029-4C8E-8882-8521BD4C9DCB}|Guest.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\guest\\views\\register\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{48F4F7B5-8029-4C8E-8882-8521BD4C9DCB}|Guest.csproj|solutionrelative:views\\register\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F4F7B5-8029-4C8E-8882-8521BD4C9DCB}|Guest.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\guest\\views\\messages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48F4F7B5-8029-4C8E-8882-8521BD4C9DCB}|Guest.csproj|solutionrelative:views\\messages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F4F7B5-8029-4C8E-8882-8521BD4C9DCB}|Guest.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\guest\\controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48F4F7B5-8029-4C8E-8882-8521BD4C9DCB}|Guest.csproj|solutionrelative:controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F4F7B5-8029-4C8E-8882-8521BD4C9DCB}|Guest.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\guest\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48F4F7B5-8029-4C8E-8882-8521BD4C9DCB}|Guest.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48F4F7B5-8029-4C8E-8882-8521BD4C9DCB}|Guest.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\guest\\views\\register\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -17,18 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{48F4F7B5-8029-4C8E-8882-8521BD4C9DCB}|Guest.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\guest\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{48F4F7B5-8029-4C8E-8882-8521BD4C9DCB}|Guest.csproj|solutionrelative:views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48F4F7B5-8029-4C8E-8882-8521BD4C9DCB}|Guest.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\guest\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48F4F7B5-8029-4C8E-8882-8521BD4C9DCB}|Guest.csproj|solutionrelative:controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48F4F7B5-8029-4C8E-8882-8521BD4C9DCB}|Guest.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\guest\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48F4F7B5-8029-4C8E-8882-8521BD4C9DCB}|Guest.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48F4F7B5-8029-4C8E-8882-8521BD4C9DCB}|Guest.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\guest\\controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48F4F7B5-8029-4C8E-8882-8521BD4C9DCB}|Guest.csproj|solutionrelative:controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48F4F7B5-8029-4C8E-8882-8521BD4C9DCB}|Guest.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\guest\\repository\\messagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -118,7 +118,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 24,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Bookmark",
@@ -186,37 +186,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MessagesController.cs",
-              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Guest\\Controllers\\MessagesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\MessagesController.cs",
-              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Guest\\Controllers\\MessagesController.cs",
-              "RelativeToolTip": "Controllers\\MessagesController.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowCUAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T17:55:18.717Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "LoginController.cs",
               "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Guest\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
               "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Guest\\Controllers\\LoginController.cs",
               "RelativeToolTip": "Controllers\\LoginController.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAIAwwDYAAAAMAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAADwvzYAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T18:18:32.872Z"
+              "WhenOpened": "2024-04-13T18:18:32.872Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "RegisterController.cs",
               "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Guest\\Controllers\\RegisterController.cs",
               "RelativeDocumentMoniker": "Controllers\\RegisterController.cs",
               "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Guest\\Controllers\\RegisterController.cs",
               "RelativeToolTip": "Controllers\\RegisterController.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAewD0AAAAuAAAA",
+              "ViewState": "AQIAADIAAAAAAAAAAAAMwEMAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-13T17:07:13.496Z",
               "EditorCaption": ""
@@ -247,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Guest\\Views\\Login\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Login\\Index.cshtml",
@@ -255,12 +244,11 @@
               "RelativeToolTip": "Views\\Login\\Index.cshtml",
               "ViewState": "AQIAABUAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-13T17:34:41.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-13T17:34:41.088Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Guest\\Views\\Register\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Register\\Edit.cshtml",
@@ -268,8 +256,7 @@
               "RelativeToolTip": "Views\\Register\\Edit.cshtml",
               "ViewState": "AQIAABUAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-17T08:06:19.551Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T08:06:19.551Z"
             },
             {
               "$type": "Document",
@@ -279,22 +266,35 @@
               "RelativeDocumentMoniker": "Views\\Register\\Index.cshtml",
               "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Guest\\Views\\Register\\Index.cshtml",
               "RelativeToolTip": "Views\\Register\\Index.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACEAAAAmAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADkAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-13T17:08:34.275Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Guest\\Views\\Messages\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Messages\\Index.cshtml",
               "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Guest\\Views\\Messages\\Index.cshtml",
               "RelativeToolTip": "Views\\Messages\\Index.cshtml",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAAAE8AAAAoAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-10T18:12:10.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MessagesController.cs",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Guest\\Controllers\\MessagesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MessagesController.cs",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Guest\\Controllers\\MessagesController.cs",
+              "RelativeToolTip": "Controllers\\MessagesController.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAA4wCUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T17:55:18.717Z",
               "EditorCaption": ""
             },
             {

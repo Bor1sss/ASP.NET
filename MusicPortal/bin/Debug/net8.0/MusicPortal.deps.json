@@ -15,6 +15,11 @@
         },
         "runtime": {
           "MusicPortal.dll": {}
+        },
+        "resources": {
+          "fr/MusicPortal.resources.dll": {
+            "locale": "fr"
+          }
         }
       },
       "AutoMapper/13.0.1": {

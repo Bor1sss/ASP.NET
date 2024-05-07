@@ -25,6 +25,7 @@ namespace Controllers
         // GET: Register
         public async Task<IActionResult> Index()
         {
+            HttpContext.Session.SetString("path", Request.Path);
             return View();
         }
 
