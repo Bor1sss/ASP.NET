@@ -117,19 +117,67 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BackToLog" xml:space="preserve">
+    <value>Back to login</value>
+  </data>
+  <data name="BackToReg" xml:space="preserve">
+    <value>Back to registration</value>
+  </data>
+  <data name="Choose" xml:space="preserve">
+    <value>Choose</value>
+  </data>
   <data name="ChooseLang" xml:space="preserve">
     <value>ChooseLang</value>
   </data>
   <data name="ConfirmPass" xml:space="preserve">
     <value>Confirm</value>
   </data>
+  <data name="Create" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Genre" xml:space="preserve">
+    <value>Genre</value>
+  </data>
+  <data name="Hello" xml:space="preserve">
+    <value>Hello</value>
+  </data>
   <data name="Login" xml:space="preserve">
     <value>Login</value>
+  </data>
+  <data name="LogOUT" xml:space="preserve">
+    <value>log out</value>
+  </data>
+  <data name="Music" xml:space="preserve">
+    <value>Music</value>
+  </data>
+  <data name="NameReq" xml:space="preserve">
+    <value>Name required</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Password</value>
   </data>
+  <data name="PasswordMatch" xml:space="preserve">
+    <value>Password doesn't match</value>
+  </data>
+  <data name="PasswordReq" xml:space="preserve">
+    <value>Password required</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>Register</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Name</value>
   </data>
 </root>

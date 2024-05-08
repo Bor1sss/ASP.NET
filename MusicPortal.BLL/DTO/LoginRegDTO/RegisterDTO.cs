@@ -8,13 +8,19 @@ namespace MusicPortal.BLL.DTO
     // на уровень представления или, наоборот, получить с этого уровня.
     public class RegisterDTO
     {
-        [Required(ErrorMessage = "Поле не должно быть пустым!")]
+        [Required(ErrorMessageResourceType = typeof(Resources.Resource),
+                 ErrorMessageResourceName = "NameReq")]
+        [Display(Name = "Title", ResourceType = typeof(Resources.Resource))]
         public string? Login { get; set; }
-        [Required(ErrorMessage = "Поле не должно быть пустым!")]
+
+
+        [Required(ErrorMessageResourceType = typeof(Resources.Resource),
+                ErrorMessageResourceName = "PasswordReq")]
+        [Display(Name = "Password", ResourceType = typeof(Resources.Resource))]
         [DataType(DataType.Password)]
         public string? Password { get; set; }
 
-        [Compare("Password", ErrorMessage = "Пароли не совпадают!")]
+        [Compare("Password", ErrorMessageResourceType = typeof(Resources.Resource), ErrorMessageResourceName = "PasswordMatch")]
         [DataType(DataType.Password)]
         public string? ConfirmPassword { get; set; }
 

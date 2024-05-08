@@ -14,11 +14,13 @@ using MusicPortal.BLL.DTO;
 using MusicPortal.BLL.Interfaces;
 using MusicPortal.Models.ViewModels;
 using MusicPortal.Models.ViewModels.Sort;
+using MusicPortal.ViewModels;
 using UserPortal.BLL.Interfaces;
 
 
 namespace MusicPortal.Controllers
 {
+    [Culture]
     public class MusicModelsController : Controller
     {
         public IWebHostEnvironment _appEnvironment { get; }
@@ -48,7 +50,7 @@ namespace MusicPortal.Controllers
         // GET: MusicModels
         public async Task<IActionResult> Index(string title, int id = 0, int page = 1, SortState sortOrder = SortState.NameAsc)
         {
-
+            HttpContext.Session.SetString("path", Request.Path);
             var login = HttpContext.Session.GetString("Login");
 
             if (login != ""&&login!=null)

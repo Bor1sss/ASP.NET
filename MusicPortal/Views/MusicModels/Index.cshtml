@@ -81,30 +81,30 @@
 
 
 
-<h1>MUSIC</h1>
+<h1>@Resources.Resource.Music</h1>
 
     <p>
 
-        <a asp-action="Create" class="btn btn-dark">Create New</a>
+        <a asp-action="Create" class="btn btn-dark">@Resources.Resource.Create @Resources.Resource.Music</a>
     </p>
 @if (ViewBag.Name == "Admin")
 {
     <p>
-        <a asp-action="CreateGenre" class="btn btn-success">Create New Genre</a>
+        <a asp-action="CreateGenre" class="btn btn-success">@Resources.Resource.Create @Resources.Resource.Genre</a>
     </p>
 }
 
 <div class="search-wrapper">
     <form method="get" class="Filter">
         <div>
-            <input name="title" value="@Model.Musics.FilterViewModel.SelectedTitle" type="text" placeholder="Поиск...">
+            <input name="title" value="@Model.Musics.FilterViewModel.SelectedTitle" type="text" placeholder="@Resources.Resource.Search...">
         </div>
         <div>
             <div>
             <label asp-for="@Model.Music.GenreID" class="control-label"></label>
        
             <select name="genre" class="form-control">
-                <option value="">Выберите жанр</option>
+                    <option value="">@Resources.Resource.Choose @Resources.Resource.Genre</option>
                 @if (ViewBag.Genres != null)
                 {
                     foreach (var genre in ViewBag.Genres)
@@ -124,10 +124,10 @@
 
         </div>
         <div>
-            <button type="submit" value="Filter" class="btn btn-sm btn-danger">Search</button>
+            <button type="submit" value="Filter" class="btn btn-sm btn-danger">@Resources.Resource.Search </button>
             @if (ViewBag.Name == "Admin")
             {
-                <button type="submit" asp-action="DeleteGenre" class="btn btn-sm btn-outline-secondary">Delete</button>
+                <button type="submit" asp-action="DeleteGenre" class="btn btn-sm btn-outline-secondary">@Resources.Resource.Delete</button>
             }
         </div>
     </form>
@@ -186,7 +186,7 @@
                         <div class="btn-group">
                             <form id="@($"downloadForm-{item.Id}")" method="post" asp-action="DownloadMusic">
                                 <input type="hidden" name="musicPath" value="@Url.Content(item.MusicPath)" />
-                                <button type="submit" class="btn btn-sm btn-outline-secondary">Download</button>
+                                <button type="submit" class="btn btn-sm btn-outline-secondary">@Resources.Resource.Download</button>
                             </form>
                              <audio controls>
                                  <source src="Music/@item.MusicPath" type="audio/mp4">
@@ -197,8 +197,8 @@
                             @if (ViewBag.Name == "Admin")
                             {
                                 <div class="btn-group">
-                                    <a class="btn btn-secondary" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
-                                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                                    <a class="btn btn-secondary" asp-action="Edit" asp-route-id="@item.Id">@Resources.Resource.Edit</a>
+                                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">@Resources.Resource.Delete</a>
                                 </div>
                             }
                         </div>

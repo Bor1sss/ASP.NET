@@ -9,10 +9,12 @@ using System.Security.Cryptography;
 using System.Text;
 using UserPortal.BLL.Interfaces;
 using MusicPortal.BLL.DTO;
+using MusicPortal.ViewModels;
 
 
 namespace Controllers
 {
+    [Culture]
     public class RegisterController : Controller
     {
         IUserService repo;

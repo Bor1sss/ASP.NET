@@ -10,9 +10,11 @@ using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pag
 using UserPortal.BLL.Interfaces;
 using MusicPortal.BLL.DTO;
 using MusicPortal.BLL.DTO.LoginRegDTO;
+using MusicPortal.ViewModels;
 
 namespace Controllers
 {
+    [Culture]
     public class LoginController : Controller
     {
         IUserService repo;

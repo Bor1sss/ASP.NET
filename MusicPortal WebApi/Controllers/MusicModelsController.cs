@@ -23,7 +23,9 @@ public class MusicModelsController : ControllerBase
     [HttpGet("music")]
     public async Task<ActionResult<IEnumerable<Music>>> GetMusics()
     {
-        return await repo.GetMusicList();
+ 
+            return await repo.GetMusicList();
+     
     }
 
     [HttpGet("music/{id}")]
@@ -91,23 +93,10 @@ public class MusicModelsController : ControllerBase
         {
             return NotFound();
         }
-
-        genro.Update(genre);
-        return Ok(genre);
-    }
-
-    // PUT: api/User
-    [HttpPut("user")]
-    public async Task<ActionResult<User>> PutUser(User user)
-    {
-        var existingUser = await repoU.GetUser(user.Id);
-        if (existingUser == null)
-        {
-            return NotFound();
-        }
-
-       // await repoU.Update(user);
-        return Ok(user);
+        existingGenre.Title= genre.Title;
+        existingGenre.Musics= genre.Musics;
+        genro.Update(existingGenre);
+        return Ok(existingGenre);
     }
 
     // PUT: api/Music
@@ -119,9 +108,13 @@ public class MusicModelsController : ControllerBase
         {
             return NotFound();
         }
+        existingMusic.Title= music.Title;
+        existingMusic.MusicPath=music.MusicPath;
+        existingMusic.PosterPath=music.PosterPath;  
+        existingMusic.Genre=music.Genre;
 
-        repo.Update(music);
-        return Ok(music);
+        repo.Update(existingMusic);
+        return Ok(existingMusic);
     }
 
     // POST: api/Genre

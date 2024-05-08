@@ -39,16 +39,16 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="GoToAdminPanel">AdminPanel</a>
                             </li>
-                            <li class="nav-item name">  Hello, @ViewBag.Name</li>
+                            <li class="nav-item name">  @Resources.Resource.Hello, @ViewBag.Name</li>
                             <li>
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="BackToLog">LogOut</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="BackToLog">@Resources.Resource.BackToLog</a>
                             </li>
                         }
                         else if (@ViewBag.Name!= "" && ViewBag.Name != null)
                         {
-                            <li class="nav-item name"> Hello, @ViewBag.Name</li>
+                            <li class="nav-item name"> @Resources.Resource.Hello, @ViewBag.Name</li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="BackToLog">LogOut</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="BackToLog">@Resources.Resource.BackToLog</a>
                             </li>
                       
                         }

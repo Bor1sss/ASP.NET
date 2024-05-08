@@ -14,3 +14,8 @@ C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal.BLL\obj\Debug\net8.0\MusicPortal.
 C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal.BLL\obj\Debug\net8.0\refint\MusicPortal.BLL.dll
 C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal.BLL\obj\Debug\net8.0\MusicPortal.BLL.pdb
 C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal.BLL\obj\Debug\net8.0\ref\MusicPortal.BLL.dll
+C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal.BLL\bin\Debug\net8.0\ru\MusicPortal.BLL.resources.dll
+C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal.BLL\obj\Debug\net8.0\MusicPortal.BLL.Resources.Resource.resources
+C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal.BLL\obj\Debug\net8.0\MusicPortal.BLL.Resources.Resource.ru.resources
+C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal.BLL\obj\Debug\net8.0\MusicPortal.BLL.csproj.GenerateResource.cache
+C:\Users\solt2\Desktop\ASP\ASP.NET\MusicPortal.BLL\obj\Debug\net8.0\ru\MusicPortal.BLL.resources.dll
