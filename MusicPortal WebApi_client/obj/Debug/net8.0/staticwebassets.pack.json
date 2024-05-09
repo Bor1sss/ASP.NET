@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MusicPortal WebApi_client\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MusicPortal WebApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.MusicPortal WebApi.props",
+      "PackagePath": "build\\MusicPortal WebApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MusicPortal WebApi.props",
+      "PackagePath": "buildMultiTargeting\\MusicPortal WebApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.MusicPortal WebApi.props",
+      "PackagePath": "buildTransitive\\MusicPortal WebApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

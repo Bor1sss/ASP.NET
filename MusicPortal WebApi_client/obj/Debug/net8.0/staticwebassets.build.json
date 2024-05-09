@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "dJhT8cZ8fCTVxvkbo+pOWUf+9kA8I7cTMIPIb25nwus=",
+  "Source": "MusicPortal WebApi",
+  "BasePath": "_content/MusicPortal WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MusicPortal WebApi\\wwwroot",
+      "Source": "MusicPortal WebApi",
+      "ContentRoot": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MusicPortal WebApi_client\\wwwroot\\",
+      "BasePath": "_content/MusicPortal WebApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MusicPortal WebApi_client\\wwwroot\\index.html",
+      "SourceId": "MusicPortal WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MusicPortal WebApi_client\\wwwroot\\",
+      "BasePath": "_content/MusicPortal WebApi",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}
