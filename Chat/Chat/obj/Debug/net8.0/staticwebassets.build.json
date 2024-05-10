@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "XoD9OSRxJAWK0eWkj3RZrBjqj3tU9eE05m9vv17KzZQ=",
+  "Source": "Chat",
+  "BasePath": "_content/Chat",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Chat\\wwwroot",
+      "Source": "Chat",
+      "ContentRoot": "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\wwwroot\\",
+      "BasePath": "_content/Chat",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\wwwroot\\index.html",
+      "SourceId": "Chat",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\wwwroot\\",
+      "BasePath": "_content/Chat",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\wwwroot\\main.js",
+      "SourceId": "Chat",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\wwwroot\\",
+      "BasePath": "_content/Chat",
+      "RelativePath": "main.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\main.js"
+    }
+  ]
+}

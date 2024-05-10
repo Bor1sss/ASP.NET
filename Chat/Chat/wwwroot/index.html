@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Chat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mt-4">Чат-комната</h2>
+        <div class="main">
+            <div id="loginBlock" class="mt-4">
+                <label for="txtUserName">Введите логин:</label>
+                <input id="txtUserName" type="text" class="form-control" />
+                <input id="btnLogin" type="button" value="Войти" class="btn btn-primary mt-2" />
+            </div>
+            <div id="chatBody" class="mt-4">
+                <div id="header"></div>
+                <div class="mt-4">
+                    <p><b>Все пользователи:</b></p>
+                    <ul id="chatusers" class="list-group"></ul>
+                </div>
+
+
+                <div id="chatroom" class="mt-4"></div>
+                <div id="inputForm">
+                    <input type="text" id="message" class="form-control" />
+                    <input type="button" id="sendmessage" value="Отправить" class="btn btn-primary mt-2" />
+                </div>
+
+            </div>
+            <input id="hdId" type="hidden" />
+            <input id="username" type="hidden" />
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
