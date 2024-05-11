@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\Chat.csproj": {}
+    "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Chat\\Chat\\Chat.csproj": {}
   },
   "projects": {
-    "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\Chat.csproj": {
+    "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Chat\\Chat\\Chat.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\Chat.csproj",
+        "projectUniqueName": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Chat\\Chat\\Chat.csproj",
         "projectName": "Chat",
-        "projectPath": "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\Chat.csproj",
+        "projectPath": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Chat\\Chat\\Chat.csproj",
         "packagesPath": "C:\\Users\\solt2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\obj\\",
+        "outputPath": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Chat\\Chat\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\solt2\\AppData\\Roaming\\NuGet\\NuGet.Config",

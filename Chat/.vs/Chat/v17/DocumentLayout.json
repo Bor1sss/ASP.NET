@@ -1,38 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\solt2\\Desktop\\Chat\\",
+  "WorkspaceRootPath": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Chat\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|c:\\users\\solt2\\desktop\\chat\\chat\\controllers\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\chat\\chat\\controllers\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|solutionrelative:chat\\controllers\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|c:\\users\\solt2\\desktop\\chat\\chat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|solutionrelative:chat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|c:\\users\\solt2\\desktop\\chat\\chat\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|solutionrelative:chat\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|c:\\users\\solt2\\desktop\\chat\\chat\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|solutionrelative:chat\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|c:\\users\\solt2\\desktop\\chat\\chat\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|solutionrelative:chat\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|c:\\users\\solt2\\desktop\\chat\\chat\\models\\chatcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|solutionrelative:chat\\models\\chatcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|c:\\users\\solt2\\desktop\\chat\\chat\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\chat\\chat\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|solutionrelative:chat\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|c:\\users\\solt2\\desktop\\chat\\chat\\wwwroot\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|solutionrelative:chat\\wwwroot\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\chat\\chat\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|solutionrelative:chat\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\chat\\chat\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|solutionrelative:chat\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\chat\\chat\\models\\chatcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|solutionrelative:chat\\models\\chatcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\chat\\chat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|solutionrelative:chat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\chat\\chat\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{90C455D0-0E2B-4CFE-A4F9-58E542D879ED}|Chat\\Chat.csproj|solutionrelative:chat\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -116,37 +112,36 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Chat\\Chat\\appsettings.json",
               "RelativeDocumentMoniker": "Chat\\appsettings.json",
-              "ToolTip": "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\appsettings.json",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Chat\\Chat\\appsettings.json",
               "RelativeToolTip": "Chat\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-10T16:23:28.255Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T16:23:28.255Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Chat\\Chat\\Program.cs",
               "RelativeDocumentMoniker": "Chat\\Program.cs",
-              "ToolTip": "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\Program.cs",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Chat\\Chat\\Program.cs",
               "RelativeToolTip": "Chat\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA2AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-10T16:22:49.248Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "ChatContext.cs",
-              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\Models\\ChatContext.cs",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Chat\\Chat\\Models\\ChatContext.cs",
               "RelativeDocumentMoniker": "Chat\\Models\\ChatContext.cs",
-              "ToolTip": "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\Models\\ChatContext.cs",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Chat\\Chat\\Models\\ChatContext.cs",
               "RelativeToolTip": "Chat\\Models\\ChatContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -155,13 +150,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\wwwroot\\index.html",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Chat\\Chat\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "Chat\\wwwroot\\index.html",
-              "ToolTip": "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Chat\\Chat\\wwwroot\\index.html",
               "RelativeToolTip": "Chat\\wwwroot\\index.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABrAAAA",
+              "ViewState": "AQIAAIwAAAAAAAAAAAAQwKoAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-05-10T16:22:49.278Z",
               "EditorCaption": ""
@@ -170,35 +165,22 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ChatHub.cs",
-              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\Controllers\\ChatHub.cs",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Chat\\Chat\\Controllers\\ChatHub.cs",
               "RelativeDocumentMoniker": "Chat\\Controllers\\ChatHub.cs",
-              "ToolTip": "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\Controllers\\ChatHub.cs",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Chat\\Chat\\Controllers\\ChatHub.cs",
               "RelativeToolTip": "Chat\\Controllers\\ChatHub.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAArwDIAAAAMAAAA",
+              "ViewState": "AQIAACYAAAAAAAAAAAAqwDIAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-10T16:22:49.28Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "main.js",
-              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\wwwroot\\main.js",
-              "RelativeDocumentMoniker": "Chat\\wwwroot\\main.js",
-              "ToolTip": "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\wwwroot\\main.js",
-              "RelativeToolTip": "Chat\\wwwroot\\main.js",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAYwIQAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-10T16:22:49.282Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Message.cs",
-              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\Models\\Message.cs",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Chat\\Chat\\Models\\Message.cs",
               "RelativeDocumentMoniker": "Chat\\Models\\Message.cs",
-              "ToolTip": "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\Models\\Message.cs",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Chat\\Chat\\Models\\Message.cs",
               "RelativeToolTip": "Chat\\Models\\Message.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -207,11 +189,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\Models\\User.cs",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Chat\\Chat\\Models\\User.cs",
               "RelativeDocumentMoniker": "Chat\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\solt2\\Desktop\\Chat\\Chat\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Chat\\Chat\\Models\\User.cs",
               "RelativeToolTip": "Chat\\Models\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
