@@ -28,21 +28,40 @@ namespace Chat.Controllers
         public async Task Send(string username, string message)
         {
             var user = _context.Users.FirstOrDefault(x => x.Name == username);
-                
-           
-            Message newMessage = new Message
-            {
-                Text = message,
-                From = user.Name,
-                dateTime = DateTime.Now,
-           
-            };
-            //user.Messages.Add(newMessage);
-            _context.Messages.Add(newMessage);
-            _context.SaveChanges();
 
-          
-            await Clients.All.SendAsync("AddMessage", username, message);
+            if (user != null)
+            {
+                Message newMessage = new Message
+                {
+                    Text = message,
+                    User = user,
+                    dateTime = DateTime.Now
+                };
+
+                _context.Messages.Add(newMessage);
+
+                // Получение последнего добавленного сообщения по времени добавления
+                var lastMessage = _context.Messages.OrderByDescending(m => m.dateTime).FirstOrDefault();
+
+                if (lastMessage != null)
+                {
+                    user.Message.Add(lastMessage);
+                }
+
+                try
+                {
+                    await _context.SaveChangesAsync();
+                }
+                catch (Exception ex)
+                {
+                    // Обработка ошибок сохранения в базу данных
+                    // Например, запись в лог или отправка уведомления об ошибке
+                    Console.WriteLine($"Ошибка при сохранении данных: {ex.Message}");
+                    throw;
+                }
+
+                await Clients.All.SendAsync("AddMessage", username, message);
+            }
         }
 
         // Подключение нового пользователя

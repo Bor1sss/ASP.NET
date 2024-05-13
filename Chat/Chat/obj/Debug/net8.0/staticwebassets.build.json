@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zTqGvveRvumLe5JuMIZNqOVZfuiV6mrxK8COdqFJPyA=",
+  "Hash": "Y2dA/e5zA+U4xph6o7D50Uwgt2akNetd4+q4R2L89A4=",
   "Source": "Chat",
   "BasePath": "_content/Chat",
   "Mode": "Default",
@@ -34,25 +34,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
-    },
-    {
-      "Identity": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Chat\\Chat\\wwwroot\\main.js",
-      "SourceId": "Chat",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\Chat\\Chat\\wwwroot\\",
-      "BasePath": "_content/Chat",
-      "RelativePath": "main.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\main.js"
     }
   ]
 }
