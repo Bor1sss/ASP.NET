@@ -1,6 +1,5 @@
 ﻿using Chat.Models;
 using Microsoft.AspNetCore.SignalR;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using MusicPortal.Models;
 using System.Collections.Generic;
@@ -29,39 +28,17 @@ namespace Chat.Controllers
         {
             var user = _context.Users.FirstOrDefault(x => x.Name == username);
 
-            if (user != null)
+            Message newMessage = new Message
             {
-                Message newMessage = new Message
-                {
-                    Text = message,
-                    User = user,
-                    dateTime = DateTime.Now
-                };
+                Text = message,
+                From = user.Name,
+                dateTime = DateTime.Now,
+            };
+            _context.Messages.Add(newMessage);
+            _context.SaveChanges();
 
-                _context.Messages.Add(newMessage);
-
-                // Получение последнего добавленного сообщения по времени добавления
-                var lastMessage = _context.Messages.OrderByDescending(m => m.dateTime).FirstOrDefault();
-
-                if (lastMessage != null)
-                {
-                    user.Message.Add(lastMessage);
-                }
-
-                try
-                {
-                    await _context.SaveChangesAsync();
-                }
-                catch (Exception ex)
-                {
-                    // Обработка ошибок сохранения в базу данных
-                    // Например, запись в лог или отправка уведомления об ошибке
-                    Console.WriteLine($"Ошибка при сохранении данных: {ex.Message}");
-                    throw;
-                }
-
-                await Clients.All.SendAsync("AddMessage", username, message);
-            }
+            // Вызов метода AddMessage на всех клиентах
+            await Clients.All.SendAsync("AddMessage", username, message);
         }
 
         // Подключение нового пользователя
@@ -69,30 +46,30 @@ namespace Chat.Controllers
         {
             var id = Context.ConnectionId;
 
-            
+
             var user = _context.Users.FirstOrDefault(x => x.ConnectionId == id);
 
             if (user == null)
             {
                 user = new User { ConnectionId = id, Name = userName, IsLoggedIn = true };
-                
+
                 _context.Users.Add(user);
                 _context.SaveChanges();
 
 
-                // Добавление в группу "LoggedInUsers"
+      
                 await Groups.AddToGroupAsync(id, "LoggedInUsers");
 
-                
+
                 var userList = _context.Users.ToList();
 
                 var messageList = _context.Messages.ToList();
-                
+
 
                 await Clients.Caller.SendAsync("Connected", id, userName, userList, messageList);
             }
 
-            // Отправка сообщения только тем, кто в группе "LoggedInUsers"
+
             await Clients.Group("LoggedInUsers").SendAsync("NewUserConnected", id, userName);
         }
 
@@ -101,9 +78,9 @@ namespace Chat.Controllers
         // почему произошло отключение.
         public override async Task OnDisconnectedAsync(Exception? exception)
         {
-            
+
             var item = _context.Users.FirstOrDefault(x => x.ConnectionId == Context.ConnectionId);
- 
+
             if (item != null)
             {
                 //item.IsLoggedIn = false;
