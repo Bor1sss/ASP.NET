@@ -6,17 +6,19 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using MovieRAZOR.IRepository;
 using MVC_first;
 
 namespace MovieRAZOR.Pages
 {
     public class EditModel : PageModel
     {
-        private readonly MVC_first.Context _context;
+        private readonly IRepository<Movie> _repository;
+
         IWebHostEnvironment _appEnvironment;
-        public EditModel(MVC_first.Context context,IWebHostEnvironment appEnvironment)
+        public EditModel(IRepository<Movie> context,IWebHostEnvironment appEnvironment)
         {
-            _context = context;
+             _repository = context;
             _appEnvironment = appEnvironment;
 
         }
@@ -31,7 +33,7 @@ namespace MovieRAZOR.Pages
                 return NotFound();
             }
 
-            var movie =  await _context.Films.FirstOrDefaultAsync(m => m.Id == id);
+            var movie = await _repository.GetById(id.Value);
             if (movie == null)
             {
                 return NotFound();
@@ -51,7 +53,7 @@ namespace MovieRAZOR.Pages
                 return Page();
             }
 
-            _context.Attach(Movie).State = EntityState.Modified;
+           await _repository.Attach(Movie);
 
             try
             {
@@ -59,7 +61,7 @@ namespace MovieRAZOR.Pages
                 {
                     return Page();
                 }
-                _context.Attach(Movie).State = EntityState.Modified;
+                
                 if (UploadedFile != null && UploadedFile.Length > 0)
                 {
                     var uploadsFolder = Path.Combine(_appEnvironment.WebRootPath, "Images");
@@ -73,7 +75,7 @@ namespace MovieRAZOR.Pages
 
                     Movie.PosterPath = "/Images/" + uniqueFileName; // сохраняем путь к файлу в объекте Movie
                 }
-                await _context.SaveChangesAsync();
+                await  _repository.Save();
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -92,7 +94,7 @@ namespace MovieRAZOR.Pages
 
         private bool MovieExists(int id)
         {
-            return _context.Films.Any(e => e.Id == id);
+            return  _repository.Exists(id).Result;
         }
     }
 }

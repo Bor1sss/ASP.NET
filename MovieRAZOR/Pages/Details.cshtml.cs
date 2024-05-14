@@ -5,17 +5,18 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
+using MovieRAZOR.IRepository;
 using MVC_first;
 
 namespace MovieRAZOR.Pages
 {
     public class DetailsModel : PageModel
     {
-        private readonly MVC_first.Context _context;
+        private readonly IRepository<Movie> _repository;
 
-        public DetailsModel(MVC_first.Context context)
+        public DetailsModel(IRepository<Movie> context)
         {
-            _context = context;
+            _repository = context;
         }
 
         public Movie Movie { get; set; } = default!;
@@ -27,7 +28,7 @@ namespace MovieRAZOR.Pages
                 return NotFound();
             }
 
-            var movie = await _context.Films.FirstOrDefaultAsync(m => m.Id == id);
+            var movie = await  _repository.GetById(id.Value);
             if (movie == null)
             {
                 return NotFound();

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MovieRAZOR")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55a0c5dfc9ad1a83670b54c06581c2f1c16d4ce5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1e8b13aedf010028068848208dee3dcf1d2e55d")]
 [assembly: System.Reflection.AssemblyProductAttribute("MovieRAZOR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MovieRAZOR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

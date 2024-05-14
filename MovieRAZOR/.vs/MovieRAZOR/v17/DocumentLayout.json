@@ -3,28 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\movierazor\\repository\\movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|solutionrelative:repository\\movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\movierazor\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|solutionrelative:models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\movierazor\\annotations\\filecheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|solutionrelative:annotations\\filecheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\movierazor\\annotations\\datacheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|solutionrelative:annotations\\datacheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\movierazor\\pages\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|solutionrelative:pages\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\movierazor\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\movierazor\\pages\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|solutionrelative:pages\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\movierazor\\pages\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|solutionrelative:pages\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\movierazor\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\movierazor\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|solutionrelative:irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\movierazor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\movierazor\\pages\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|solutionrelative:pages\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\movierazor\\pages\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|solutionrelative:pages\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\movierazor\\pages\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|solutionrelative:pages\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\movierazor\\models\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|solutionrelative:models\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\movierazor\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\movierazor\\pages\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|solutionrelative:pages\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\movierazor\\pages\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -35,28 +67,12 @@
       "RelativeMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|solutionrelative:pages\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\movierazor\\pages\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|solutionrelative:pages\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\movierazor\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|solutionrelative:models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\movierazor\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\movierazor\\pages\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|solutionrelative:pages\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\movierazor\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\movierazor\\models\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|solutionrelative:models\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8C0C23D-8AE6-4C4E-872A-258B51124F5B}|MovieRAZOR.csproj|c:\\users\\solt2\\desktop\\asp\\asp.net\\movierazor\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 24,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Bookmark",
@@ -139,19 +155,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "FileCheck.cs",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Annotations\\FileCheck.cs",
+              "RelativeDocumentMoniker": "Annotations\\FileCheck.cs",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Annotations\\FileCheck.cs",
+              "RelativeToolTip": "Annotations\\FileCheck.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T11:06:53.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataCheck.cs",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Annotations\\DataCheck.cs",
+              "RelativeDocumentMoniker": "Annotations\\DataCheck.cs",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Annotations\\DataCheck.cs",
+              "RelativeToolTip": "Annotations\\DataCheck.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T11:06:51.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MovieRepository.cs",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Repository\\MovieRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\MovieRepository.cs",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Repository\\MovieRepository.cs",
+              "RelativeToolTip": "Repository\\MovieRepository.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAADkAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T10:56:15.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\IRepository\\IRepository.cs",
+              "RelativeDocumentMoniker": "IRepository\\IRepository.cs",
+              "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\IRepository\\IRepository.cs",
+              "RelativeToolTip": "IRepository\\IRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T10:55:21.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Pages\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
               "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Pages\\Index.cshtml.cs",
               "RelativeToolTip": "Pages\\Index.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-14T10:48:36.08Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Pages\\Edit.cshtml",
               "RelativeDocumentMoniker": "Pages\\Edit.cshtml",
@@ -159,25 +227,24 @@
               "RelativeToolTip": "Pages\\Edit.cshtml",
               "ViewState": "AQIAACQAAAAAAAAAAAAAACQAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-14T10:44:14.517Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T10:44:14.517Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Edit.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Pages\\Edit.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Edit.cshtml.cs",
               "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Pages\\Edit.cshtml.cs",
               "RelativeToolTip": "Pages\\Edit.cshtml.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAAwD0AAABEAAAA",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAswDcAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-14T10:44:15.518Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -185,12 +252,11 @@
               "RelativeToolTip": "wwwroot\\css\\site.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-14T10:15:33.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T10:15:33.707Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml",
@@ -198,25 +264,24 @@
               "RelativeToolTip": "Pages\\Index.cshtml",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-14T10:14:56.446Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T10:14:56.446Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Delete.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Pages\\Delete.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Delete.cshtml.cs",
               "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Pages\\Delete.cshtml.cs",
               "RelativeToolTip": "Pages\\Delete.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAAMAAAA",
+              "ViewState": "AQIAACwAAAAAAAAAAAAwwDgAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-14T10:14:56.355Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Pages\\Delete.cshtml",
               "RelativeDocumentMoniker": "Pages\\Delete.cshtml",
@@ -224,38 +289,37 @@
               "RelativeToolTip": "Pages\\Delete.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-14T10:14:56.277Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T10:14:56.277Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 5,
               "Title": "Details.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Pages\\Details.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Details.cshtml.cs",
               "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Pages\\Details.cshtml.cs",
               "RelativeToolTip": "Pages\\Details.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-14T10:14:56.187Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Create.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Pages\\Create.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Create.cshtml.cs",
               "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Pages\\Create.cshtml.cs",
               "RelativeToolTip": "Pages\\Create.cshtml.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAowCUAAAAMAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowDkAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-14T10:14:55.818Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Pages\\Create.cshtml",
               "RelativeDocumentMoniker": "Pages\\Create.cshtml",
@@ -263,25 +327,24 @@
               "RelativeToolTip": "Pages\\Create.cshtml",
               "ViewState": "AQIAABEAAAAAAAAAAAAAAB4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-14T10:14:55.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T10:14:55.602Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "Movie.cs",
               "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Models\\Movie.cs",
               "RelativeDocumentMoniker": "Models\\Movie.cs",
               "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Models\\Movie.cs",
               "RelativeToolTip": "Models\\Movie.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAA1wBgAAAAzAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAgwA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-14T10:14:13.463Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -289,25 +352,24 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-14T10:13:59.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T10:13:59.476Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAaAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-14T10:07:44.963Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
@@ -315,12 +377,11 @@
               "RelativeToolTip": "Models\\ErrorViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T10:07:43.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T10:07:43.858Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "Context.cs",
               "DocumentMoniker": "C:\\Users\\solt2\\Desktop\\ASP\\ASP.NET\\MovieRAZOR\\Models\\Context.cs",
               "RelativeDocumentMoniker": "Models\\Context.cs",

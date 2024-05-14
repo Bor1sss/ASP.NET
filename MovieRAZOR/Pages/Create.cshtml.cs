@@ -6,17 +6,18 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using MovieRAZOR.IRepository;
 using MVC_first;
 
 namespace MovieRAZOR.Pages
 {
     public class CreateModel : PageModel
     {
-        private readonly MVC_first.Context _context;
+        private readonly IRepository<Movie> _repository;
         IWebHostEnvironment _appEnvironment;
-        public CreateModel(MVC_first.Context context, IWebHostEnvironment appEnvironment)
+        public CreateModel(IRepository<Movie> context, IWebHostEnvironment appEnvironment)
         {
-            _context = context;
+             _repository = context;
             _appEnvironment = appEnvironment;
 
         }
@@ -54,8 +55,8 @@ namespace MovieRAZOR.Pages
                 Movie.PosterPath = "/Images/" + uniqueFileName; // сохраняем путь к файлу в объекте Movie
             }
 
-            _context.Films.Add(Movie);
-            await _context.SaveChangesAsync();
+             _repository.Create(Movie);
+            await  _repository.Save();
 
             return RedirectToPage("./Index");
         }
