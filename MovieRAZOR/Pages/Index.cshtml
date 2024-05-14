@@ -1,0 +1,30 @@
+﻿@page
+@model MovieRAZOR.Pages.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<div class="main">
+    <a asp-page="Create">Create New</a>
+    @foreach (var film in Model.Movie)
+    {
+        <div class="filmplate">
+            <img class="image" src="@film.PosterPath" />
+            <div class="finfo">
+                <span>@film.Title</span>
+                <span>@film.Director</span>
+                <span> @film.Genre</span>
+                <span>@film.Date.ToShortDateString()</span>
+                <span id="min">@film.Description</span>
+
+                <div class="button-container">
+                    <a asp-page="./Edit" asp-route-id="@film.Id">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@film.Id">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@film.Id">Delete</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,41 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.filmplate {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.finfo {
+    margin-top: 10px;
+}
+
+    .finfo span {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+
+#min {
+    font-size: 12px;
+    color: #666;
+}
+
+.fEdit {
+    display: none;
+}
